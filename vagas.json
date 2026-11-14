@@ -1,1 +1,60 @@
-{}
+{
+ "Acessórios Carro/Moto": {
+  "1": 2,
+  "2": 2,
+  "3": 2
+ },
+ "Bebês & Brinquedos": {
+  "1": 2
+ },
+ "Beleza & Saúde": {
+  "1": 2
+ },
+ "Casa & Decoração": {
+  "1": 2,
+  "2": 2,
+  "3": 2,
+  "4": 2,
+  "5": 2
+ },
+ "Eletrônicos & Eletrodomésticos": {
+  "1": 2,
+  "2": 2,
+  "3": 2,
+  "4": 2,
+  "5": 2
+ },
+ "Esportes & Fitness": {
+  "1": 2
+ },
+ "Ferramentas & Construção": {
+  "1": 2
+ },
+ "Games": {
+  "1": 2
+ },
+ "Mercado & Bebidas": {
+  "1": 2
+ },
+ "Moda Feminina": {
+  "1": 2,
+  "2": 2,
+  "3": 2,
+  "4": 2,
+  "5": 2
+ },
+ "Moda Masculina": {
+  "1": 2,
+  "2": 2,
+  "3": 2,
+  "4": 2,
+  "5": 2
+ },
+ "Pets": {
+  "1": 2,
+  "2": 2,
+  "3": 2,
+  "4": 2,
+  "5": 2
+ }
+}
