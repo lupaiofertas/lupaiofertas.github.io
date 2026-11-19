@@ -29,6 +29,10 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--lente);outline-off
 h1,h2,h3{font-family:var(--disp);font-stretch:112.5%;font-weight:600;color:var(--petroleo);letter-spacing:-.005em;text-wrap:balance;margin:0}
 .topo .wrap{height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}
 .logo{height:30px;width:auto;display:block}
+.nav-topo{display:flex;align-items:center;gap:14px}
+.nav-topo a{white-space:nowrap;font-weight:600;font-size:.95rem;color:var(--lente);text-decoration:none}
+.nav-topo a:hover{text-decoration:underline}
+@media (max-width:380px){.nav-topo .selo{display:none}}
 .selo{font-size:.85rem;font-weight:600;color:var(--lente);background:var(--mentaclaro);padding:6px 12px;border-radius:99px}
 .hero .wrap{padding-block:20px 8px;text-align:center}
 .hero h1{font-size:clamp(1.9rem,5.4vw,3.4rem);line-height:1.05;max-width:16em;margin-inline:auto}
@@ -136,7 +140,7 @@ a.card:hover .cta::after{transform:translateX(120%);transition:transform .7s eas
 </style>
 </head>
 <body>
-<header class="topo"><div class="wrap"><img class="logo" src="marca/logo-horizontal-cor.svg" alt="LupAI" width="103" height="30"><span class="selo">Grátis</span></div></header>
+<header class="topo"><div class="wrap"><img class="logo" src="marca/logo-horizontal-cor.svg" alt="LupAI" width="103" height="30"><nav class="nav-topo"><a href="ofertas.html">Ofertas de hoje</a><span class="selo">Grátis</span></nav></div></header>
 
 <section class="hero"><div class="wrap">
   <h1>Ofertas conferidas, direto no seu WhatsApp.</h1>
