@@ -1,10 +1,11 @@
 <!doctype html>
 <html lang="pt-BR">
+<script>document.documentElement.classList.add("js")</script>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>LupAI · grupos de ofertas</title>
-<meta name="description" content="Ofertas do Mercado Livre no WhatsApp com preço conferido: até 3 por dia, por tema, grátis.">
+<meta name="description" content="Ofertas do Mercado Livre e de outras lojas no WhatsApp, com preço conferido. Grupos gratuitos por tema.">
 <meta property="og:title" content="LupAI · o preço visto de perto">
 <meta property="og:description" content="Antes de comprar, a gente confere. Grupos gratuitos de ofertas por tema.">
 <meta property="og:image" content="https://ondecompro.github.io/marca/og.jpg">
@@ -38,15 +39,19 @@ h1,h2,h3{font-family:var(--disp);font-stretch:112.5%;font-weight:600;color:var(-
 .escolha{padding-block:24px 56px}
 .passo1{font-family:var(--disp);font-weight:600;font-size:.82rem;letter-spacing:.09em;text-transform:uppercase;color:var(--lente);text-align:center;margin:0 0 14px}
 .cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
-a.card{display:flex;flex-direction:column;align-items:flex-start;gap:10px;background:var(--branco);border-radius:16px;padding:16px;text-decoration:none;
-  box-shadow:0 1px 0 var(--linha),0 0 0 1px var(--linha);transition:transform .12s ease,box-shadow .12s ease;min-width:0}
-a.card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(15,43,46,.10),0 0 0 1.5px var(--lente)}
-a.card:active{transform:translateY(0)}
-.ic{width:44px;height:44px;border-radius:12px;background:var(--mentaclaro);display:grid;place-items:center;flex:none}
-.ic svg{width:24px;height:24px;stroke:var(--lente)}
+a.card{display:flex;flex-direction:column;background:var(--branco);border-radius:16px;overflow:hidden;text-decoration:none;
+  box-shadow:0 0 0 1px var(--linha);transition:transform .2s ease,box-shadow .2s ease;min-width:0}
+a.card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(15,43,46,.14),0 0 0 1.5px var(--lente)}
+a.card:active{transform:translateY(-1px)}
+.foto{position:relative;aspect-ratio:5/3;background:var(--petroleo);overflow:hidden;flex:none}
+.foto img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+a.card:hover .foto img{transform:scale(1.06)}
+.ic{position:absolute;left:12px;bottom:-18px;width:40px;height:40px;border-radius:12px;background:var(--branco);display:grid;place-items:center;box-shadow:0 2px 8px rgba(15,43,46,.15)}
+.ic svg{width:22px;height:22px;stroke:var(--lente)}
+.corpo{display:flex;flex-direction:column;gap:8px;padding:16px;flex:1}
 .card b{font-weight:600;color:var(--petroleo);line-height:1.25;font-size:1rem}
 .card .d{font-size:.86rem;color:var(--cinza);line-height:1.4;flex:1}
-.card .cta{margin-top:auto;width:100%;display:flex;align-items:center;justify-content:center;gap:8px;background:var(--lente);color:#fff;font-weight:600;font-size:.95rem;border-radius:10px;padding:11px 12px}
+.card .cta{margin-top:auto;position:relative;overflow:hidden;width:100%;display:flex;align-items:center;justify-content:center;gap:8px;background:var(--lente);color:#fff;font-weight:600;font-size:.95rem;border-radius:10px;padding:11px 12px}
 a.card:hover .cta{background:var(--lente2)}
 .cta svg{width:18px;height:18px;flex:none}
 .obs{text-align:center;color:var(--cinza);font-size:.92rem;margin:18px 0 0}
@@ -78,7 +83,18 @@ footer p{margin:0;max-width:60ch}
 .fixo{position:fixed;left:0;right:0;bottom:0;padding:10px max(16px,env(safe-area-inset-left,0px)) calc(10px + env(safe-area-inset-bottom,0px));
   background:rgba(244,246,243,.94);backdrop-filter:blur(8px);border-top:1px solid var(--linha);display:none;z-index:5}
 .fixo a{display:flex;justify-content:center;width:100%}
-.fixo.ver{display:block}
+/* Animações: entrada suave ao rolar, brilho no botão. Desligadas para quem pede menos movimento. */
+.js .surge{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.2,1)}
+.js .surge.ok{opacity:1;transform:none}
+.hero h1,.hero p.lead,.garantias{animation:sobe .7s cubic-bezier(.2,.7,.2,1) both}
+.hero p.lead{animation-delay:.08s}.garantias{animation-delay:.16s}
+@keyframes sobe{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.card .cta::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.28) 50%,transparent 70%);transform:translateX(-120%)}
+a.card:hover .cta::after{transform:translateX(120%);transition:transform .7s ease}
+.selo{animation:pulso 2.4s ease-in-out infinite}
+@keyframes pulso{0%,100%{box-shadow:0 0 0 0 rgba(18,124,110,.25)}50%{box-shadow:0 0 0 6px rgba(18,124,110,0)}}
+.fixo{transform:translateY(110%);transition:transform .3s ease;display:block}
+.fixo.ver{transform:none}
 @media (max-width:900px){.cards{grid-template-columns:repeat(3,minmax(0,1fr))}.passos{grid-template-columns:1fr 1fr}}
 @media (max-width:640px){
   .hero .wrap{padding-block:8px 0}
@@ -87,8 +103,10 @@ footer p{margin:0;max-width:60ch}
   .garantias{font-size:.88rem;gap:6px 14px;margin-top:12px}
   .escolha{padding-block:20px 40px}
   .cards{grid-template-columns:1fr;gap:8px}
-  a.card{flex-direction:row;align-items:center;gap:12px;padding:10px 10px 10px 12px;border-radius:14px}
-  .ic{width:40px;height:40px;border-radius:10px}
+  a.card{flex-direction:row;align-items:center;border-radius:14px}
+  .foto{width:84px;aspect-ratio:auto;align-self:stretch;min-height:76px}
+  .ic{display:none}
+  .corpo{flex-direction:row;align-items:center;gap:10px;padding:10px 10px 10px 12px}
   .card b{flex:1;font-size:.98rem}
   .card .d{display:none}
   .card .cta{margin:0;width:auto;padding:10px 14px;font-size:.92rem}
@@ -98,7 +116,7 @@ footer p{margin:0;max-width:60ch}
   footer .wrap{flex-direction:column}
 }
 @media (min-width:641px){.fixo{display:none!important}}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}a.card{transition:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.js .surge{opacity:1;transform:none}}
 </style>
 </head>
 <body>
@@ -106,10 +124,10 @@ footer p{margin:0;max-width:60ch}
 
 <section class="hero"><div class="wrap">
   <h1>Ofertas conferidas, direto no seu WhatsApp.</h1>
-  <p class="lead">Escolha o tema que te interessa e receba até 3 ofertas por dia do Mercado Livre, com o preço verificado na hora.</p>
+  <p class="lead">Escolha o tema que te interessa e receba ofertas do Mercado Livre e de outras lojas, com o preço verificado na hora.</p>
   <ul class="garantias">
     <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Grátis</li>
-    <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Só 3 mensagens por dia</li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Em 3 horários fixos</li>
     <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Sai quando quiser</li>
   </ul>
 </div></section>
@@ -120,40 +138,40 @@ footer p{margin:0;max-width:60ch}
   <p class="obs">Ninguém vê seu número além do administrador. Só ele envia mensagens no grupo.</p>
 </div></section>
 
-<section class="faixa branca"><div class="wrap quem">
+<section class="surge faixa branca"><div class="wrap quem">
   <img src="marca/personagem.jpg" alt="Ilustração do Roni, criador da LupAI, segurando uma lupa" width="900" height="900" loading="lazy">
   <div><h2>Quem confere as ofertas</h2>
-  <p>Eu sou o Roni, criador da LupAI. Todos os dias o nosso sistema acompanha os produtos mais vendidos do Mercado Livre e só manda para o grupo o que passou na conferência de preço. Sem enxurrada de mensagens e sem desconto inventado.</p></div>
+  <p>Eu sou o Roni, criador da LupAI. Todos os dias o nosso sistema acompanha os produtos mais vendidos do Mercado Livre e de outras lojas e só manda para o grupo o que passou na conferência de preço. Sem enxurrada de mensagens e sem desconto inventado.</p></div>
 </div></section>
 
-<section class="faixa" id="como"><div class="wrap">
+<section class="surge faixa" id="como"><div class="wrap">
   <h2>Como uma oferta entra no grupo</h2>
   <div class="passos">
-    <div><span class="n">01</span><h3>Tem que estar vendendo</h3><p>Partimos da lista oficial de mais vendidos de cada categoria. Produto que ninguém compra não entra.</p></div>
+    <div><span class="n">01</span><h3>Tem que estar vendendo</h3><p>Partimos das listas de mais vendidos de cada loja e categoria. Produto que ninguém compra não entra.</p></div>
     <div><span class="n">02</span><h3>Preço conferido na hora</h3><p>O valor é lido de novo até 15 minutos antes do envio. Se mudou ou acabou o estoque, a oferta é descartada.</p></div>
-    <div><span class="n">03</span><h3>Desconto só com prova</h3><p>O preço antigo só aparece quando o próprio Mercado Livre informa ou quando o nosso histórico de 30 dias confirma.</p></div>
-    <div><span class="n">04</span><h3>Sem repetição</h3><p>A mesma oferta não volta ao grupo dentro de 7 dias. São três horários por dia e nada além disso.</p></div>
+    <div><span class="n">03</span><h3>Desconto só com prova</h3><p>O preço antigo só aparece quando a própria loja informa ou quando o nosso histórico de 30 dias confirma.</p></div>
+    <div><span class="n">04</span><h3>Sem repetição</h3><p>A mesma oferta não volta ao grupo dentro de 7 dias. As ofertas chegam só nos três horários do dia.</p></div>
   </div>
 </div></section>
 
-<section class="faixa branca"><div class="wrap">
+<section class="surge faixa branca"><div class="wrap">
   <h2>Perguntas frequentes</h2>
   <div class="faq">
     <details><summary>Custa alguma coisa?</summary><p>Não. Participar é grátis e você pode sair do grupo quando quiser.</p></details>
-    <details><summary>Vou receber mensagem o dia todo?</summary><p>Não. São até 3 ofertas por dia, de manhã, na hora do almoço e à noite. Só o administrador envia mensagem.</p></details>
-    <details><summary>Como vocês ganham com isso?</summary><p>Os links são de afiliado do Mercado Livre. Se você comprar por eles, recebemos uma comissão paga pelo Mercado Livre, sem custo a mais para você.</p></details>
-    <details><summary>A compra é feita onde?</summary><p>No próprio Mercado Livre, com a sua conta, o pagamento e a garantia de lá. Nós não vendemos nem recebemos pagamento de ninguém.</p></details>
+    <details><summary>Vou receber mensagem o dia todo?</summary><p>Não. As ofertas chegam em 3 horários fixos: de manhã, na hora do almoço e à noite. Fora disso o grupo fica em silêncio, e só o administrador envia mensagem.</p></details>
+    <details><summary>Como vocês ganham com isso?</summary><p>Os links são de afiliado das lojas. Se você comprar por eles, a loja nos paga uma comissão, sem custo a mais para você.</p></details>
+    <details><summary>A compra é feita onde?</summary><p>Na própria loja da oferta, como o Mercado Livre, com a sua conta, o pagamento e a garantia de lá. Nós não vendemos nem recebemos pagamento de ninguém.</p></details>
     <details><summary>Posso entrar em mais de um tema?</summary><p>Pode. Cada tema é um grupo separado, então entre em quantos quiser.</p></details>
   </div>
 </div></section>
 
-<section class="faixa fim"><div class="wrap">
+<section class="surge faixa fim"><div class="wrap">
   <h2>Pronto para comprar melhor?</h2>
   <p>Escolha um tema e entre no grupo em um toque.</p>
   <a class="btn" href="#grupos">Escolher meu grupo</a>
 </div></section>
 
-<footer><div class="wrap"><img class="logo logo-rod" src="marca/logo-horizontal-cor.svg" alt="LupAI" width="76" height="22"><p>LupAI é um serviço independente de curadoria. Os links das ofertas são de afiliado: se você comprar por eles, podemos receber uma comissão do Mercado Livre, sem custo a mais para você. Preços e estoque podem mudar depois do envio.</p></div></footer>
+<footer><div class="wrap"><img class="logo logo-rod" src="marca/logo-horizontal-cor.svg" alt="LupAI" width="76" height="22"><p>LupAI é um serviço independente de curadoria. Os links das ofertas são de afiliado: se você comprar por eles, podemos receber uma comissão da loja, sem custo a mais para você. Preços e estoque podem mudar depois do envio.</p></div></footer>
 
 <div class="fixo" id="fixo"><a class="btn" href="#grupos">Escolher meu grupo no WhatsApp</a></div>
 
@@ -180,18 +198,27 @@ function icone(nome) {
 }
 const ZAP = '<path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/>';
 function desenhar(vagas) {
+  const redesenho = lista.children.length > 0;
   lista.replaceChildren();
-  for (const n of NICHOS) {
+  NICHOS.forEach((n, i) => {
     const g = grupoComVaga(n, vagas);
     const a = el("a", "card"); a.href = g.url; a.target = "_blank"; a.rel = "noopener";
     a.setAttribute("aria-label", "Entrar no grupo de " + n.nome + " no WhatsApp");
-    const ic = el("span", "ic"); ic.append(icone(n.img));
+    const foto = el("span", "foto"); const img = el("img"); img.src = "marca/temas/" + n.img + ".jpg"; img.alt = ""; img.loading = "lazy";
+    img.width = 600; img.height = 360; foto.append(img);
     const cta = el("span", "cta"); const z = icone(""); z.innerHTML = ZAP; z.setAttribute("stroke", "currentColor");
     const t = el("span", "", "Entrar"); t.append(el("span", "longo", " no grupo")); cta.append(z, t);
-    a.append(ic, el("b", "", n.nome), el("span", "d", n.desc), cta);
+    const corpo = el("span", "corpo"); corpo.append(el("b", "", n.nome), el("span", "d", n.desc), cta);
+    a.append(foto, corpo);
+    a.classList.add("surge"); if (redesenho) a.classList.add("ok"); a.style.transitionDelay = (i % 4) * 60 + "ms";
     lista.append(a);
-  }
+  });
+  revelar();
 }
+// Entrada suave dos blocos quando aparecem na tela.
+const vigia = "IntersectionObserver" in window ? new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add("ok"); vigia.unobserve(e.target); } }), {rootMargin: "0px 0px -8% 0px"}) : null;
+function revelar() { document.querySelectorAll(".surge:not(.ok)").forEach(x => vigia ? vigia.observe(x) : x.classList.add("ok")); }
 // No celular, um botão fixo leva aos temas enquanto eles não estão na tela.
 const fixo = document.getElementById("fixo");
 if ("IntersectionObserver" in window) {
