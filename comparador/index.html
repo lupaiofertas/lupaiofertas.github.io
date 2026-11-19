@@ -75,6 +75,9 @@ h1{font-family:var(--disp);font-stretch:112.5%;font-weight:600;color:var(--petro
 .ordem select{font:inherit;font-size:.88rem;font-weight:600;color:var(--petroleo);background:var(--branco);border:0;box-shadow:0 0 0 1px var(--linha);border-radius:10px;padding:7px 8px}
 @media (max-width:380px){.topo nav{display:none}}
 @media (max-width:640px){.barra{flex-direction:column;align-items:stretch;gap:0}.ordem{justify-content:flex-end;padding-bottom:4px}.marca .sub{font-size:.85rem}}
+.temas.buscando button[aria-pressed="true"]{background:var(--branco);color:var(--petroleo);box-shadow:0 0 0 1px var(--linha)}
+.mais{grid-column:1/-1;justify-self:center;font:inherit;font-weight:600;color:var(--petroleo);background:var(--branco);border:0;box-shadow:0 0 0 1px var(--linha);border-radius:12px;padding:12px 22px;cursor:pointer}
+.mais:hover{box-shadow:0 0 0 1.5px var(--lente)}
 .vazio{grid-column:1/-1;text-align:center;background:var(--branco);border-radius:16px;box-shadow:0 0 0 1px var(--linha);padding:40px 20px;color:var(--cinza)}
 .vazio b{display:block;color:var(--petroleo);font-size:1.1rem;margin-bottom:6px}
 .zap{background:var(--petroleo);color:var(--papel);border-radius:20px;padding:28px;display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:48px}
@@ -139,7 +142,7 @@ const grade = document.getElementById("grade"), temas = document.getElementById(
 const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
 const real = c => (c / 100).toLocaleString("pt-BR", {style: "currency", currency: "BRL"});
 const seguro = u => /^https:\/\//.test(u || "") ? u : null;
-let OFERTAS = [], filtro = new URLSearchParams(location.search).get("tema") || "Todos";
+let OFERTAS = [], filtro = new URLSearchParams(location.search).get("tema") || "Destaques do dia";
 
 function vazio(titulo, texto) {
   const v = el("div", "vazio"); v.append(el("b", "", titulo), el("span", "", texto)); grade.replaceChildren(v);
@@ -180,47 +183,89 @@ function cartao(o, i) {
   c.style.transitionDelay = (i % 4) * 50 + "ms";
   return c;
 }
+// Catálogo diário (motor, 9h): catalogo/indice.json = {atualizado, categorias:[{tema, arquivo, total}]},
+// catalogo/<arquivo> = {itens:[{id, tema, titulo, foto, selo?, comissao, lojas:[...]}]} ou a lista direto,
+// catalogo/busca.json = [{id, titulo, tema, menor_preco, foto}]. Sem catálogo, a página usa só ofertas.json.
+const DEST = "Destaques do dia", POR_PAGINA = 48;
+let INDICE = null, BUSCA = null, buscaPedida = null, mostrar = POR_PAGINA, vez = 0;
+const SHARDS = {};
+const pegar = u => fetch(u, {cache: "no-store"}).then(r => r.ok ? r.json() : null).catch(() => null);
+const arquivoDe = tema => INDICE && (INDICE.categorias.find(c => c.tema === tema) || {}).arquivo;
+function shard(arq) {
+  if (!SHARDS[arq]) SHARDS[arq] = pegar("../catalogo/" + arq).then(d => (Array.isArray(d) ? d : (d && d.itens) || [])
+    .filter(o => o && o.titulo).map(normalizar).filter(Boolean));
+  return SHARDS[arq];
+}
 function desenharTemas() {
-  const cont = {}; OFERTAS.forEach(o => cont[o.tema] = (cont[o.tema] || 0) + 1);
-  const lista = ["Todos", ...Object.keys(cont).sort((a, b) => cont[b] - cont[a])];
-  if (!lista.includes(filtro)) filtro = "Todos";
-  temas.replaceChildren(...lista.map(t => {
+  let lista;
+  if (INDICE) lista = [[DEST, OFERTAS.length], ...INDICE.categorias.map(c => [c.tema, c.total])];
+  else { const cont = {}; OFERTAS.forEach(o => cont[o.tema] = (cont[o.tema] || 0) + 1);
+    lista = [["Todos", OFERTAS.length], ...Object.keys(cont).sort((x, y) => cont[y] - cont[x]).map(t => [t, cont[t]])]; }
+  if (!lista.some(([t]) => t === filtro)) filtro = lista[0][0];
+  temas.replaceChildren(...lista.map(([t, n]) => {
     const b = el("button", "", t); b.type = "button"; b.setAttribute("aria-pressed", t === filtro);
-    b.append(el("span", "", t === "Todos" ? OFERTAS.length : cont[t]));
-    b.onclick = () => { filtro = t; history.replaceState(null, "", t === "Todos" ? "./" : "?tema=" + encodeURIComponent(t)); desenharTemas(); desenhar(); };
+    if (n != null) b.append(el("span", "", Number(n).toLocaleString("pt-BR")));
+    b.onclick = () => { filtro = t; mostrar = POR_PAGINA; history.replaceState(null, "", t === lista[0][0] ? "./" : "?tema=" + encodeURIComponent(t)); desenharTemas(); desenhar(); };
     return b;
   }));
 }
-const sem = t => (t || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+const sem = t => (t || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 const desc = o => o.lojas[0].de > o.lojas[0].preco ? 1 - o.lojas[0].preco / o.lojas[0].de : 0;
 const ORDENS = {desconto: (a, b) => desc(b) - desc(a), preco: (a, b) => a.lojas[0].preco - b.lojas[0].preco, lojas: (a, b) => b.lojas.length - a.lojas.length || desc(b) - desc(a)};
 const q = document.getElementById("q"), ordem = document.getElementById("ordem");
-q.addEventListener("input", () => desenhar()); ordem.addEventListener("change", () => desenhar());
-function desenhar() {
-  const termos = sem(q.value).split(/\s+/).filter(Boolean);
-  const lista = OFERTAS.filter(o => filtro === "Todos" || o.tema === filtro)
-    .filter(o => { const t = sem(o.titulo + " " + o.tema + " " + o.lojas.map(l => l.loja).join(" ")); return termos.every(x => t.includes(x)); })
-    .sort(ORDENS[ordem.value]);
-  if (!lista.length && termos.length) return vazio("Nada encontrado para \u201c" + q.value.trim() + "\u201d", "Tente outra palavra ou veja todas as categorias.");
-  if (!lista.length) return vazio("Os preços estão sendo atualizados", "A lista é renovada várias vezes por dia. Volte em instantes.");
-  grade.replaceChildren(...lista.map(cartao));
+let espera; q.addEventListener("input", () => { clearTimeout(espera); espera = setTimeout(() => { mostrar = POR_PAGINA; desenhar(); }, 220); });
+ordem.addEventListener("change", () => desenhar());
+const casa = (texto, termos) => { const t = sem(texto); return termos.every(x => t.includes(x)); };
+// Monta a lista do filtro atual; com busca e catálogo, procura em todas as categorias pelo busca.json.
+async function itens(termos) {
+  const naCategoria = INDICE && filtro !== DEST && filtro !== "Todos";
+  if (termos.length && INDICE) {
+    if (!buscaPedida) buscaPedida = pegar("../catalogo/busca.json").then(d => BUSCA = Array.isArray(d) ? d : []);
+    await buscaPedida;
+    if (BUSCA.length) {
+      const achados = BUSCA.filter(x => casa(x.titulo + " " + x.tema, termos)).slice(0, 120);
+      const porTema = {}; achados.forEach(x => (porTema[x.tema] = porTema[x.tema] || new Set()).add(x.id));
+      const partes = await Promise.all(Object.keys(porTema).map(t => arquivoDe(t) ? shard(arquivoDe(t)).then(l => l.filter(o => porTema[t].has(o.id))) : []));
+      const extra = OFERTAS.filter(o => !o.id && casa(o.titulo + " " + o.tema, termos));
+      return [...partes.flat(), ...extra];
+    }
+  }
+  const base = naCategoria ? await shard(arquivoDe(filtro)) : OFERTAS.filter(o => filtro === DEST || filtro === "Todos" || o.tema === filtro);
+  return termos.length ? base.filter(o => casa(o.titulo + " " + o.tema + " " + o.lojas.map(l => l.loja).join(" "), termos)) : base;
+}
+async function desenhar() {
+  const minha = ++vez, termos = sem(q.value).split(/\s+/).filter(Boolean);
+  if (filtro !== DEST && INDICE && !SHARDS[arquivoDe(filtro)] && !termos.length) vazio("Carregando…", "");
+  temas.classList.toggle("buscando", termos.length > 0);
+  const lista = (await itens(termos)).slice().sort(ORDENS[ordem.value]);
+  if (minha !== vez) return;
+  if (!lista.length && termos.length) return vazio("Nada encontrado para “" + q.value.trim() + "”", "Tente outra palavra ou veja todas as categorias.");
+  if (!lista.length) return vazio("Os preços estão sendo atualizados", "A lista é renovada todos os dias de manhã. Volte em instantes.");
+  const cards = lista.slice(0, mostrar).map(cartao);
+  if (lista.length > mostrar) {
+    const mais = el("button", "mais", "Ver mais produtos (faltam " + (lista.length - mostrar).toLocaleString("pt-BR") + ")");
+    mais.type = "button"; mais.onclick = () => { mostrar += POR_PAGINA; desenhar(); }; cards.push(mais);
+  }
+  grade.replaceChildren(...cards);
   revelar();
 }
 const vigia = "IntersectionObserver" in window ? new IntersectionObserver(es => es.forEach(e => {
   if (e.isIntersecting) { e.target.classList.add("ok"); vigia.unobserve(e.target); } }), {rootMargin: "0px 0px -5% 0px"}) : null;
 function revelar() { document.querySelectorAll(".surge:not(.ok)").forEach(x => vigia ? vigia.observe(x) : x.classList.add("ok")); }
+function quando(iso) {
+  const t = new Date(iso); if (isNaN(t)) return;
+  document.getElementById("quando").textContent = "Preços lidos em " + t.toLocaleDateString("pt-BR", {day: "2-digit", month: "2-digit"}) +
+    " às " + t.toLocaleTimeString("pt-BR", {hour: "2-digit", minute: "2-digit"}) + ". Podem mudar na loja.";
+}
 
-vazio("Carregando as ofertas…", "");
-fetch("../ofertas.json", {cache: "no-store"}).then(r => r.ok ? r.json() : null).then(d => {
+vazio("Carregando os preços…", "");
+Promise.all([pegar("../catalogo/indice.json"), pegar("../ofertas.json")]).then(([ind, d]) => {
+  if (ind && Array.isArray(ind.categorias) && ind.categorias.length) INDICE = ind;
   OFERTAS = (d && Array.isArray(d.ofertas) ? d.ofertas : []).filter(o => o && o.titulo).map(normalizar).filter(Boolean);
-  if (d && d.atualizado) {
-    const t = new Date(d.atualizado);
-    if (!isNaN(t)) document.getElementById("quando").textContent =
-      "Preços lidos em " + t.toLocaleDateString("pt-BR", {day: "2-digit", month: "2-digit"}) + " às " +
-      t.toLocaleTimeString("pt-BR", {hour: "2-digit", minute: "2-digit"}) + ". Podem mudar na loja.";
-  }
+  quando((INDICE && INDICE.atualizado) || (d && d.atualizado));
+  if (INDICE && !OFERTAS.length && filtro === DEST) filtro = INDICE.categorias[0].tema;
   desenharTemas(); desenhar();
-}).catch(() => vazio("Os preços estão sendo atualizados", "A lista é renovada várias vezes por dia. Volte em instantes."));
+});
 </script>
 </body>
 </html>
