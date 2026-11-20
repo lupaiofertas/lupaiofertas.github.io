@@ -1,6 +1,146 @@
 {
- "atualizado": "2026-11-20T08:27:58-03:00",
+ "atualizado": "2026-11-20T12:59:28-03:00",
  "ofertas": [
+  {
+   "tema": "Acessórios Carro/Moto",
+   "titulo": "Amplificador Taramps TS 800x4 800W 4 Canais para Som Automotivo",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_631074-MLA99452011506_112025-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 32900,
+     "frete_gratis": true,
+     "link": "https://meli.la/2RW8KRz",
+     "lido_em": "2026-11-20T15:51:46.872108+00:00",
+     "de": 47337
+    }
+   ],
+   "selo": "SUBINDO"
+  },
+  {
+   "tema": "Mercado & Bebidas",
+   "titulo": "Bombom Ouro Branco Lacta de Chocolate Branco – Pacote de 1 kg",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_762733-MLA113027523774_072026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 6304,
+     "frete_gratis": false,
+     "link": "https://meli.la/1SWbWUB",
+     "lido_em": "2026-11-20T15:50:17.640612+00:00",
+     "de": 6600
+    }
+   ],
+   "selo": "SUBINDO"
+  },
+  {
+   "tema": "Pets",
+   "titulo": "Bravecto Cães 20-40kg 1000mg 1 Comp. Mastigável Msd Azul",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_713073-MLA87288318879_072025-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 15000,
+     "frete_gratis": true,
+     "link": "https://meli.la/14zoJ3J",
+     "lido_em": "2026-11-20T15:49:47.986506+00:00"
+    }
+   ],
+   "selo": "SUBINDO"
+  },
+  {
+   "tema": "Ferramentas & Construção",
+   "titulo": "Telha Pvc Plan Precon 2.42x0.88m Terracota",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_870580-MLA115067778901_072026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 3999,
+     "frete_gratis": false,
+     "link": "https://meli.la/26iMboJ",
+     "lido_em": "2026-11-20T15:47:20.616078+00:00"
+    }
+   ],
+   "selo": "MAIS VENDIDO"
+  },
+  {
+   "tema": "Casa & Decoração",
+   "titulo": "Kit 10 Pote De Vidro Marmita Hermético 640ml Freezer Fitness Vitrex",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_994871-MLA119301626806_112026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 9292,
+     "frete_gratis": true,
+     "link": "https://meli.la/32WtKw3",
+     "lido_em": "2026-11-20T15:46:50.883106+00:00",
+     "de": 19990
+    }
+   ],
+   "selo": "SUBINDO"
+  },
+  {
+   "tema": "Eletrônicos & Eletrodomésticos",
+   "titulo": "Sony PlayStation Store Gift Card R$ 150 (Digital)",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_902418-MLA116666090065_082026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 15000,
+     "frete_gratis": false,
+     "link": "https://meli.la/2LuMV9t",
+     "lido_em": "2026-11-20T15:44:20.954355+00:00"
+    }
+   ],
+   "selo": "MAIS VENDIDO"
+  },
+  {
+   "tema": "Beleza & Saúde",
+   "titulo": "O Boticário Quasar Blue Desodorante Colônia 100ml",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_645686-MLA82876911341_032025-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 8757,
+     "frete_gratis": true,
+     "link": "https://meli.la/2idUXt3",
+     "lido_em": "2026-11-20T15:41:55.386276+00:00"
+    }
+   ],
+   "selo": "MAIS VENDIDO"
+  },
+  {
+   "tema": "Moda Masculina",
+   "titulo": "Tênis Kappa Park 2.0 Original Unissex Caminhada Academia",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_2X_789799-MLB116276661206_092026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 7219,
+     "frete_gratis": false,
+     "link": "https://meli.la/1rPC4aT",
+     "lido_em": "2026-11-20T15:39:01.113154+00:00",
+     "de": 16999
+    }
+   ],
+   "selo": "TOP 2 MAIS VENDIDOS"
+  },
+  {
+   "tema": "Moda Feminina",
+   "titulo": "Tênis Casual Kappa Zenit Masculino Unissex Conforto",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_2X_692628-MLB119722648743_102026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 8998,
+     "frete_gratis": false,
+     "link": "https://meli.la/2jbKHmN",
+     "lido_em": "2026-11-20T15:37:06.011226+00:00",
+     "de": 22999
+    }
+   ],
+   "selo": "TOP 3 MAIS VENDIDOS"
+  },
   {
    "tema": "Acessórios Carro/Moto",
    "titulo": "Carregador Inteligente De Bateria Automotiva 12v 6a Bivolt Recupera",
@@ -79,22 +219,6 @@
     }
    ],
    "selo": "SUBINDO"
-  },
-  {
-   "tema": "Moda Masculina",
-   "titulo": "Tênis Casual Kappa Zenit Masculino Unissex Conforto",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_2X_692628-MLB119722648743_102026-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 8998,
-     "frete_gratis": false,
-     "link": "https://meli.la/2jbKHmN",
-     "lido_em": "2026-11-20T11:05:49.687675+00:00",
-     "de": 22999
-    }
-   ],
-   "selo": "TOP 3 MAIS VENDIDOS"
   },
   {
    "tema": "Moda Feminina",
