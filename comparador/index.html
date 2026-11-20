@@ -79,9 +79,18 @@ h1{font-family:var(--disp);font-stretch:112.5%;font-weight:600;color:var(--petro
 .mais[hidden]{display:none}
 .mais button{font:inherit;font-weight:600;font-size:.95rem;color:var(--petroleo);background:var(--branco);border:0;box-shadow:0 0 0 1px var(--linha);border-radius:12px;padding:12px 22px;cursor:pointer}
 .mais button:hover{box-shadow:0 0 0 1.5px var(--lente)}
-.of .outras{font-size:.76rem;color:var(--cinza);text-align:center;line-height:1.4}
-.of .outras a{color:var(--lente);font-weight:600;text-decoration:none}
-.of .outras a:hover{text-decoration:underline}
+.of .comp{margin:4px 0 2px;border-radius:12px;background:var(--papel);padding:10px 10px 4px}
+.of .comp b{display:block;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--petroleo);margin-bottom:4px}
+.of .comp .lojas{margin:0;border-top:0}
+.of .comp .lojas li:last-child{border-bottom:0}
+.of .comp .lojas a{font-size:.88rem;padding:8px 0}
+.of .comp .lojas li.melhor a{color:var(--petroleo)}
+.of .comp .lojas strong{white-space:nowrap}
+.of .comp .lojas a{align-items:baseline}
+.of .economia{font-size:.8rem;font-weight:600;color:var(--lente)}
+.of .nlojas{position:absolute;left:10px;bottom:10px;background:var(--lente);color:#fff;font-size:.7rem;font-weight:600;padding:3px 8px;border-radius:99px}
+.filtro{flex:none;display:flex;align-items:center;gap:6px;font-size:.85rem;color:var(--cinza);cursor:pointer;white-space:nowrap}
+.filtro input{accent-color:var(--lente);width:16px;height:16px}
 .of .selo.grupo{background:var(--petroleo);color:var(--papel)}
 .vazio{grid-column:1/-1;text-align:center;background:var(--branco);border-radius:16px;box-shadow:0 0 0 1px var(--linha);padding:40px 20px;color:var(--cinza)}
 .vazio b{display:block;color:var(--petroleo);font-size:1.1rem;margin-bottom:6px}
@@ -98,6 +107,8 @@ footer p{margin:0;max-width:70ch}
 .js .surge.ok{opacity:1;transform:none}
 @media (max-width:900px){.grade{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:640px){
+  .of .comp{padding:8px 8px 2px}
+  .of .comp .lojas a{font-size:.8rem;flex-wrap:wrap;column-gap:6px}
   .grade{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
   .of .corpo{padding:10px;gap:4px}
   .of .por{font-size:1.2rem}
@@ -124,7 +135,8 @@ footer p{margin:0;max-width:70ch}
 <main class="wrap">
   <div class="barra">
     <div class="temas" id="temas" role="toolbar" aria-label="Filtrar por categoria"></div>
-    <label class="ordem">Ordenar <select id="ordem"><option value="relevancia">Mais vendidos</option><option value="preco">Menor preço</option><option value="desconto">Maior desconto</option></select></label>
+    <label class="filtro"><input type="checkbox" id="varias"> Só em 2+ lojas</label>
+    <label class="ordem">Ordenar <select id="ordem"><option value="relevancia">Mais vendidos</option><option value="preco">Menor preço</option><option value="desconto">Maior desconto</option><option value="lojas">Mais lojas</option></select></label>
   </div>
     <div class="grade" id="grade" aria-live="polite"></div>
   <div class="mais" id="mais" hidden><button type="button" id="maisbtn">Mostrar mais produtos</button></div>
@@ -142,6 +154,7 @@ footer p{margin:0;max-width:70ch}
 // catalogo/indice.json { "atualizado": "...", "total": 3200, "categorias": [ { "tema": "Pets", "arquivo": "catalogo/pets.json", "total": 240 } ] }
 // catalogo/<tema>.json { "produtos": [ { "id": "ml:MLB...", "tema": "Pets", "titulo": "...", "foto": "https://...", "selo": "MAIS VENDIDO", "posicao": 1,
 //                         "lojas": [ { "loja": "Mercado Livre", "preco": 3368, "de": 4590, "frete_gratis": true, "link": "https://...", "lido_em": "...", "comissao": true } ] } ] }
+// Com "ean", o mesmo produto pode vir com várias lojas (ex.: Mercado Livre e Magalu), já em ordem de preço.
 // ofertas.json { "atualizado": "...", "ofertas": [ mesmo formato, sem id ] }: o que saiu nos grupos hoje, vem primeiro.
 // Preços em centavos. "de" é o preço riscado da própria loja; sem ele, não mostramos desconto.
 const grade = document.getElementById("grade"), temas = document.getElementById("temas");
@@ -161,12 +174,6 @@ function normalizar(o) {
   return lojas.length ? {...o, lojas} : null;
 }
 const hora = t => { const d = new Date(t); return isNaN(d) ? "" : d.toLocaleTimeString("pt-BR", {hour: "2-digit", minute: "2-digit"}); };
-// Busca do mesmo produto em outras lojas (sem preço: só a página de busca da loja, com a nossa etiqueta)
-const termoBusca = t => (t || "").replace(/[^\p{L}\p{N} ]+/gu, " ").split(/\s+/).filter(Boolean).slice(0, 7).join(" ");
-const OUTRAS = [
-  {loja: "Amazon", url: q => "https://www.amazon.com.br/s?k=" + encodeURIComponent(q) + "&tag=lupai-20"},
-  {loja: "Magalu", url: q => "https://www.magazinevoce.com.br/magazineclubedoclickof/busca/" + encodeURIComponent(q) + "/"},
-];
 function linkLoja(href, texto, cls) {
   const a = el("a", cls, texto); a.href = href; a.target = "_blank"; a.rel = "noopener sponsored"; return a;
 }
@@ -184,6 +191,8 @@ function cartao(o, i) {
     el("span", "de", temDe ? real(m.de) : ""), el("span", "por", real(m.preco)),
     el("span", "frete", m.frete_gratis ? "Frete grátis" : ""));
   if (o.lojas.length > 1) {
+    img.append(el("span", "nlojas", o.lojas.length + " lojas"));
+    const comp = el("div", "comp"); comp.append(el("b", "", "Compare nas lojas"));
     const ul = el("ul", "lojas");
     o.lojas.forEach((l, k) => {
       const li = el("li", k === 0 ? "melhor" : ""), a = linkLoja(l.link);
@@ -191,17 +200,12 @@ function cartao(o, i) {
       if (l.lido_em) a.title = "Preço lido às " + hora(l.lido_em);
       li.append(a); ul.append(li);
     });
-    corpo.append(ul);
+    comp.append(ul); corpo.append(comp);
+    const caro = o.lojas[o.lojas.length - 1].preco;
+    if (caro > m.preco) corpo.append(el("span", "economia", "Economia de " + real(caro - m.preco)));
   }
-  corpo.append(linkLoja(m.link, o.lojas.length > 1 ? "Ver no " + m.loja : "Ver na loja", "ver"));
+  corpo.append(linkLoja(m.link, o.lojas.length > 1 ? "Ver o menor preço" : "Ver na loja", "ver"));
   if (m.lido_em) corpo.append(el("span", "lido", "Preço lido às " + hora(m.lido_em)));
-  const q = termoBusca(o.titulo), ja = new Set(o.lojas.map(l => l.loja));
-  const outras = OUTRAS.filter(x => !ja.has(x.loja));
-  if (q && outras.length) {
-    const p = el("span", "outras", "Compare também: ");
-    outras.forEach((x, k) => { if (k) p.append(" · "); p.append(linkLoja(x.url(q), x.loja)); });
-    corpo.append(p);
-  }
   c.append(img, corpo);
   c.style.transitionDelay = (i % 4) * 50 + "ms";
   return c;
@@ -220,13 +224,15 @@ function desenharTemas() {
 const sem = t => (t || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 const desc = o => o.lojas[0].de > o.lojas[0].preco ? 1 - o.lojas[0].preco / o.lojas[0].de : 0;
 const ORDENS = {
-  relevancia: (a, b) => (b.grupo ? 1 : 0) - (a.grupo ? 1 : 0) || (a.posicao || 99) - (b.posicao || 99) || desc(b) - desc(a),
+  relevancia: (a, b) => (b.grupo ? 1 : 0) - (a.grupo ? 1 : 0) || b.lojas.length - a.lojas.length || (a.posicao || 99) - (b.posicao || 99) || desc(b) - desc(a),
   preco: (a, b) => a.lojas[0].preco - b.lojas[0].preco,
   desconto: (a, b) => desc(b) - desc(a) || (a.posicao || 99) - (b.posicao || 99),
+  lojas: (a, b) => b.lojas.length - a.lojas.length || (a.posicao || 99) - (b.posicao || 99),
 };
 const q = document.getElementById("q"), ordem = document.getElementById("ordem");
 let espera; q.addEventListener("input", () => { clearTimeout(espera); espera = setTimeout(desenhar, 150); });
 ordem.addEventListener("change", () => desenhar());
+const varias = document.getElementById("varias"); varias.addEventListener("change", () => desenhar());
 maisBtn.addEventListener("click", () => {
   const de = mostrando; mostrando += POR_PAGINA;
   grade.append(...LISTA.slice(de, mostrando).map((o, k) => cartao(o, de + k))); maisBox.hidden = mostrando >= LISTA.length; revelar();
@@ -234,9 +240,11 @@ maisBtn.addEventListener("click", () => {
 function desenhar() {
   const termos = sem(q.value).split(/\s+/).filter(Boolean);
   LISTA = OFERTAS.filter(o => filtro === "Todos" || o.tema === filtro)
+    .filter(o => !varias.checked || o.lojas.length > 1)
     .filter(o => !termos.length || termos.every(x => o._busca.includes(x)))
     .sort(ORDENS[ordem.value] || ORDENS.relevancia);
   mostrando = POR_PAGINA;
+  if (!LISTA.length && varias.checked) return vazio("Ainda não há produtos nessa seleção em mais de uma loja", "A comparação cresce a cada coleta. Desmarque \u201cSó em 2+ lojas\u201d para ver todos.");
   if (!LISTA.length && termos.length) return vazio("Nada encontrado para “" + q.value.trim() + "”", "Tente outra palavra ou veja todas as categorias.");
   if (!LISTA.length) return vazio("Os preços estão sendo atualizados", "A lista é renovada várias vezes por dia. Volte em instantes.");
   grade.replaceChildren(...LISTA.slice(0, mostrando).map(cartao));
@@ -263,9 +271,10 @@ Promise.all([json("../ofertas.json"), json("../catalogo/indice.json").then(ind =
     .filter(o => { const k = chave(o); if (vistos.has(k) || o.lojas.some(l => vistos.has(l.link))) return false; vistos.add(k); return true; });
   OFERTAS = [...grupo, ...cat];
   OFERTAS.forEach(o => o._busca = sem(o.titulo + " " + o.tema + " " + o.lojas.map(l => l.loja).join(" ")));
+  const comparados = OFERTAS.filter(o => o.lojas.length > 1).length;
   const quando = [ind && ind.atualizado, of && of.atualizado].map(t => new Date(t)).filter(t => !isNaN(t)).sort((a, b) => b - a)[0];
   if (quando) document.getElementById("quando").textContent =
-    OFERTAS.length.toLocaleString("pt-BR") + " produtos. Preços lidos em " + quando.toLocaleDateString("pt-BR", {day: "2-digit", month: "2-digit"}) +
+    OFERTAS.length.toLocaleString("pt-BR") + " produtos" + (comparados ? ", " + comparados.toLocaleString("pt-BR") + " com preço em mais de uma loja" : "") + ". Preços lidos em " + quando.toLocaleDateString("pt-BR", {day: "2-digit", month: "2-digit"}) +
     " às " + quando.toLocaleTimeString("pt-BR", {hour: "2-digit", minute: "2-digit"}) + ". Podem mudar na loja.";
   desenharTemas(); desenhar();
 }).catch(() => vazio("Os preços estão sendo atualizados", "A lista é renovada várias vezes por dia. Volte em instantes."));
