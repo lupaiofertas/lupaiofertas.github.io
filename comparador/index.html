@@ -151,7 +151,7 @@ footer p{margin:0;max-width:70ch}
 
 <script>
 // Dois arquivos publicados pelo motor:
-// catalogo/indice.json { "atualizado": "...", "total": 3200, "categorias": [ { "tema": "Pets", "arquivo": "catalogo/pets.json", "total": 240 } ] }
+// catalogo/indice.json { "atualizado": "...", "precos_em": "..." (última conferência dos preços, de hora em hora), "total": 3200, "categorias": [ { "tema": "Pets", "arquivo": "catalogo/pets.json", "total": 240 } ] }
 // catalogo/<tema>.json { "produtos": [ { "id": "ml:MLB...", "tema": "Pets", "titulo": "...", "foto": "https://...", "selo": "MAIS VENDIDO", "posicao": 1,
 //                         "lojas": [ { "loja": "Mercado Livre", "preco": 3368, "de": 4590, "frete_gratis": true, "link": "https://...", "lido_em": "...", "comissao": true } ] } ] }
 // Com "ean", o mesmo produto pode vir com várias lojas (ex.: Mercado Livre e Magalu), já em ordem de preço.
@@ -246,7 +246,7 @@ function desenhar() {
   mostrando = POR_PAGINA;
   if (!LISTA.length && varias.checked) return vazio("Ainda não há produtos nessa seleção em mais de uma loja", "A comparação cresce a cada coleta. Desmarque \u201cSó em 2+ lojas\u201d para ver todos.");
   if (!LISTA.length && termos.length) return vazio("Nada encontrado para “" + q.value.trim() + "”", "Tente outra palavra ou veja todas as categorias.");
-  if (!LISTA.length) return vazio("Os preços estão sendo atualizados", "A lista é renovada várias vezes por dia. Volte em instantes.");
+  if (!LISTA.length) return vazio("Os preços estão sendo atualizados", "Os preços são conferidos de hora em hora. Volte em instantes.");
   grade.replaceChildren(...LISTA.slice(0, mostrando).map(cartao));
   maisBox.hidden = mostrando >= LISTA.length;
   maisBtn.textContent = "Mostrar mais produtos (" + (LISTA.length - mostrando).toLocaleString("pt-BR") + ")";
@@ -272,12 +272,12 @@ Promise.all([json("../ofertas.json"), json("../catalogo/indice.json").then(ind =
   OFERTAS = [...grupo, ...cat];
   OFERTAS.forEach(o => o._busca = sem(o.titulo + " " + o.tema + " " + o.lojas.map(l => l.loja).join(" ")));
   const comparados = OFERTAS.filter(o => o.lojas.length > 1).length;
-  const quando = [ind && ind.atualizado, of && of.atualizado].map(t => new Date(t)).filter(t => !isNaN(t)).sort((a, b) => b - a)[0];
+  const quando = [ind && (ind.precos_em || ind.atualizado), of && of.atualizado].map(t => new Date(t)).filter(t => !isNaN(t)).sort((a, b) => b - a)[0];
   if (quando) document.getElementById("quando").textContent =
-    OFERTAS.length.toLocaleString("pt-BR") + " produtos" + (comparados ? ", " + comparados.toLocaleString("pt-BR") + " com preço em mais de uma loja" : "") + ". Preços lidos em " + quando.toLocaleDateString("pt-BR", {day: "2-digit", month: "2-digit"}) +
+    OFERTAS.length.toLocaleString("pt-BR") + " produtos" + (comparados ? ", " + comparados.toLocaleString("pt-BR") + " com preço em mais de uma loja" : "") + ". Preços conferidos em " + quando.toLocaleDateString("pt-BR", {day: "2-digit", month: "2-digit"}) +
     " às " + quando.toLocaleTimeString("pt-BR", {hour: "2-digit", minute: "2-digit"}) + ". Podem mudar na loja.";
   desenharTemas(); desenhar();
-}).catch(() => vazio("Os preços estão sendo atualizados", "A lista é renovada várias vezes por dia. Volte em instantes."));
+}).catch(() => vazio("Os preços estão sendo atualizados", "Os preços são conferidos de hora em hora. Volte em instantes."));
 </script>
 </body>
 </html>
