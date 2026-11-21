@@ -136,7 +136,7 @@ footer p{margin:0;max-width:70ch}
   <div class="barra">
     <div class="temas" id="temas" role="toolbar" aria-label="Filtrar por categoria"></div>
     <label class="filtro"><input type="checkbox" id="varias"> Só em 2+ lojas</label>
-    <label class="ordem">Ordenar <select id="ordem"><option value="relevancia">Mais vendidos</option><option value="preco">Menor preço</option><option value="desconto">Maior desconto</option><option value="lojas">Mais lojas</option></select></label>
+    <label class="ordem">Ordenar <select id="ordem"><option value="relevancia">Destaques</option><option value="vendidos">Mais vendidos</option><option value="preco">Menor preço</option><option value="desconto">Maior desconto</option><option value="lojas">Mais lojas</option></select></label>
   </div>
     <div class="grade" id="grade" aria-live="polite"></div>
   <div class="mais" id="mais" hidden><button type="button" id="maisbtn">Mostrar mais produtos</button></div>
@@ -223,8 +223,30 @@ function desenharTemas() {
 }
 const sem = t => (t || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 const desc = o => o.lojas[0].de > o.lojas[0].preco ? 1 - o.lojas[0].preco / o.lojas[0].de : 0;
+// Destaques: o mais atrativo primeiro. Mais vendido na categoria, desconto real, preço em mais de uma
+// loja, oferta escolhida para os grupos, frete grátis e selo contam a favor; item muito barato e sem foto,
+// contra. Em "Todos", cada tema perde um pouco a cada produto que já entrou, para os temas se alternarem.
+function atrativo(o) {
+  const m = o.lojas[0], pos = Math.min(o.posicao || 21, 21);
+  let p = 30 * (21 - pos) / 20 + 25 * Math.min(desc(o), 0.5) / 0.5;
+  if (o.lojas.length > 1) p += 40;  // comparação de verdade é o motivo do site: vem na frente
+  if (o.grupo) p += 10;
+  if (m.frete_gratis) p += 8;
+  if (o.selo) p += 5;
+  if (!seguro(o.foto)) p -= 30;
+  p += m.preco < 2000 ? -15 : m.preco < 5000 ? -5 : m.preco <= 300000 ? 5 : 0;
+  return p;
+}
+function destaques(lista) {
+  lista.forEach(o => o._nota = atrativo(o));
+  lista.sort((a, b) => b._nota - a._nota);
+  if (filtro !== "Todos") return lista;
+  const vistos = {};
+  lista.forEach(o => { const k = vistos[o.tema] = (vistos[o.tema] || 0) + 1; o._mix = o._nota - 4 * (k - 1); });
+  return lista.sort((a, b) => b._mix - a._mix);
+}
 const ORDENS = {
-  relevancia: (a, b) => (b.lojas.length > 1) - (a.lojas.length > 1) || (b.grupo ? 1 : 0) - (a.grupo ? 1 : 0) || b.lojas.length - a.lojas.length || (a.posicao || 99) - (b.posicao || 99) || desc(b) - desc(a),
+  vendidos: (a, b) => (a.posicao || 99) - (b.posicao || 99) || desc(b) - desc(a),
   preco: (a, b) => a.lojas[0].preco - b.lojas[0].preco,
   desconto: (a, b) => desc(b) - desc(a) || (a.posicao || 99) - (b.posicao || 99),
   lojas: (a, b) => b.lojas.length - a.lojas.length || (a.posicao || 99) - (b.posicao || 99),
@@ -243,7 +265,8 @@ function desenhar() {
   LISTA = OFERTAS.filter(o => filtro === "Todos" || o.tema === filtro)
     .filter(o => !varias.checked || o.lojas.length > 1)
     .filter(o => !termos.length || termos.every(x => o._busca.includes(x)))
-    .sort(ORDENS[ordem.value] || ORDENS.relevancia);
+;
+  LISTA = ORDENS[ordem.value] ? LISTA.sort(ORDENS[ordem.value]) : destaques(LISTA);
   mostrando = POR_PAGINA;
   if (!LISTA.length && varias.checked) return vazio("Ainda não há produtos nessa seleção em mais de uma loja", "A comparação cresce a cada coleta. Desmarque \u201cSó em 2+ lojas\u201d para ver todos.");
   if (!LISTA.length && termos.length) return vazio("Nada encontrado para “" + q.value.trim() + "”", "Tente outra palavra ou veja todas as categorias.");
