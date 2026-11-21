@@ -36,7 +36,7 @@ h1{font-family:var(--disp);font-stretch:112.5%;font-weight:600;color:var(--petro
 .temas button{flex:none;font:inherit;font-size:.9rem;font-weight:600;color:var(--petroleo);background:var(--branco);border:0;box-shadow:0 0 0 1px var(--linha);border-radius:99px;padding:8px 14px;cursor:pointer;white-space:nowrap}
 .temas button[aria-pressed="true"]{background:var(--petroleo);color:var(--papel);box-shadow:none}
 .temas button span{font-weight:500;opacity:.65;margin-left:4px}
-.grade{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;align-items:start;padding-block:8px 40px}
+.grade{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;grid-auto-flow:row dense;padding-block:8px 40px}
 .of{display:flex;flex-direction:column;background:var(--branco);border-radius:16px;overflow:hidden;box-shadow:0 0 0 1px var(--linha);min-width:0;transition:transform .2s ease,box-shadow .2s ease}
 .of:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(15,43,46,.12),0 0 0 1.5px var(--lente)}
 .of .img{position:relative;aspect-ratio:1;background:#fff;display:block;border-bottom:1px solid var(--linha)}
@@ -79,6 +79,9 @@ h1{font-family:var(--disp);font-stretch:112.5%;font-weight:600;color:var(--petro
 .mais[hidden]{display:none}
 .mais button{font:inherit;font-weight:600;font-size:.95rem;color:var(--petroleo);background:var(--branco);border:0;box-shadow:0 0 0 1px var(--linha);border-radius:12px;padding:12px 22px;cursor:pointer}
 .mais button:hover{box-shadow:0 0 0 1.5px var(--lente)}
+.of.larga{grid-column:span 2;flex-direction:row}
+.of.larga .img{flex:0 0 46%;aspect-ratio:auto;min-height:100%;border-bottom:0;border-right:1px solid var(--linha)}
+.of.larga .corpo{min-width:0}
 .of .comp{margin:4px 0 2px;border-radius:12px;background:var(--papel);padding:10px 10px 4px}
 .of .comp b{display:block;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--petroleo);margin-bottom:4px}
 .of .comp .lojas{margin:0;border-top:0}
@@ -110,6 +113,7 @@ footer p{margin:0;max-width:70ch}
   .of .comp{padding:8px 8px 2px}
   .of .comp .lojas a{font-size:.8rem;flex-wrap:wrap;column-gap:6px}
   .grade{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .of.larga .img{flex-basis:42%}
   .of .corpo{padding:10px;gap:4px}
   .of .por{font-size:1.2rem}
   .of .tit{font-size:.86rem}
@@ -178,7 +182,8 @@ function linkLoja(href, texto, cls) {
   const a = el("a", cls, texto); a.href = href; a.target = "_blank"; a.rel = "noopener sponsored"; return a;
 }
 function cartao(o, i) {
-  const c = el("article", "of surge"), m = o.lojas[0];
+  // comparado: cartão largo (ocupa 2 colunas, foto ao lado), da mesma altura dos outros da linha
+  const c = el("article", o.lojas.length > 1 ? "of larga surge" : "of surge"), m = o.lojas[0];
   const img = linkLoja(m.link, null, "img"); img.setAttribute("aria-label", o.titulo);
   const f = el("img"); f.src = seguro(o.foto) || "../marca/favicon.svg"; f.alt = ""; f.loading = i < 8 ? "eager" : "lazy"; f.referrerPolicy = "no-referrer";
   img.append(f);
