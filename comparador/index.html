@@ -224,7 +224,7 @@ function desenharTemas() {
 const sem = t => (t || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 const desc = o => o.lojas[0].de > o.lojas[0].preco ? 1 - o.lojas[0].preco / o.lojas[0].de : 0;
 const ORDENS = {
-  relevancia: (a, b) => (b.grupo ? 1 : 0) - (a.grupo ? 1 : 0) || b.lojas.length - a.lojas.length || (a.posicao || 99) - (b.posicao || 99) || desc(b) - desc(a),
+  relevancia: (a, b) => (b.lojas.length > 1) - (a.lojas.length > 1) || (b.grupo ? 1 : 0) - (a.grupo ? 1 : 0) || b.lojas.length - a.lojas.length || (a.posicao || 99) - (b.posicao || 99) || desc(b) - desc(a),
   preco: (a, b) => a.lojas[0].preco - b.lojas[0].preco,
   desconto: (a, b) => desc(b) - desc(a) || (a.posicao || 99) - (b.posicao || 99),
   lojas: (a, b) => b.lojas.length - a.lojas.length || (a.posicao || 99) - (b.posicao || 99),
@@ -233,6 +233,7 @@ const q = document.getElementById("q"), ordem = document.getElementById("ordem")
 let espera; q.addEventListener("input", () => { clearTimeout(espera); espera = setTimeout(desenhar, 150); });
 ordem.addEventListener("change", () => desenhar());
 const varias = document.getElementById("varias"); varias.addEventListener("change", () => desenhar());
+{ const u = new URLSearchParams(location.search); if (u.get("q")) q.value = u.get("q"); if (u.get("varias") === "1") varias.checked = true; }
 maisBtn.addEventListener("click", () => {
   const de = mostrando; mostrando += POR_PAGINA;
   grade.append(...LISTA.slice(de, mostrando).map((o, k) => cartao(o, de + k))); maisBox.hidden = mostrando >= LISTA.length; revelar();
