@@ -1,6 +1,740 @@
 {
- "atualizado": "2026-11-20T12:59:28-03:00",
+ "atualizado": "2026-11-20T21:22:32-03:00",
  "ofertas": [
+  {
+   "tema": "Acessórios Carro/Moto",
+   "titulo": "Lona Impermeável 3x2 Brava Adventure 100 Micras Proteção Contra Chuva",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_639517-MLA113032461288_072026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 2648,
+     "frete_gratis": false,
+     "link": "https://meli.la/1WSZK1H",
+     "lido_em": "2026-11-21T00:20:51.190099+00:00",
+     "de": 2998
+    }
+   ],
+   "selo": "EM ALTA"
+  },
+  {
+   "tema": "Mercado & Bebidas",
+   "titulo": "Suplemento em pó Nestlé alimentar nutren senior sem sabor Nutren x",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_738652-MLA99929301201_112025-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 7599,
+     "frete_gratis": false,
+     "link": "https://meli.la/188B2UQ",
+     "lido_em": "2026-11-21T00:19:23.604537+00:00",
+     "de": 10997
+    }
+   ],
+   "selo": "TOP 2 MAIS VENDIDOS"
+  },
+  {
+   "tema": "Pets",
+   "titulo": "1kg Cavalo Forte Premium Suplemento Cavalo Equinos",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_643801-MLA113900165058_072026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 14900,
+     "frete_gratis": true,
+     "link": "https://meli.la/1qfuvJ8",
+     "lido_em": "2026-11-21T00:18:53.939520+00:00",
+     "de": 19700
+    }
+   ],
+   "selo": "EM ALTA"
+  },
+  {
+   "tema": "Ferramentas & Construção",
+   "titulo": "Escada de alumínio tesoura 6 Degraus Domestica Botafogo Lar & Lazer",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_660350-MLA99498292708_112025-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 20497,
+     "frete_gratis": false,
+     "link": "https://meli.la/1rA3hnY",
+     "lido_em": "2026-11-21T00:16:27.195058+00:00"
+    }
+   ],
+   "selo": "EM ALTA"
+  },
+  {
+   "tema": "Games",
+   "titulo": "Bundle Nintendo Switch 2 + Mario Kart World + 3 Meses NSO",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_642168-MLA118780566083_102026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 399558,
+     "frete_gratis": true,
+     "link": "https://meli.la/29XnYug",
+     "lido_em": "2026-11-21T00:15:57.471501+00:00"
+    }
+   ],
+   "selo": "EM ALTA"
+  },
+  {
+   "tema": "Casa & Decoração",
+   "titulo": "Papel Higiênico Neve Supreme Folha Tripla, Kit Com 24 Rolos",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_866261-MLA99361636628_112025-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 4990,
+     "frete_gratis": false,
+     "link": "https://meli.la/25AahWV",
+     "lido_em": "2026-11-21T00:15:28.011755+00:00"
+    }
+   ],
+   "selo": "MAIS VENDIDO"
+  },
+  {
+   "tema": "Esportes & Fitness",
+   "titulo": "Joelheira Volei Esportiva E Mangas Para Masculino E Feminina Cor",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_623912-MLA114709940373_072026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 2921,
+     "frete_gratis": false,
+     "link": "https://meli.la/1nB9FHL",
+     "lido_em": "2026-11-21T00:13:02.221505+00:00",
+     "de": 7896
+    }
+   ],
+   "selo": "EM ALTA"
+  },
+  {
+   "tema": "Bebês & Brinquedos",
+   "titulo": "Jogo Stop De Palavras Adedonha Educativo Infantil Interativo Familia",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_633703-MLA120091503725_102026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 4299,
+     "frete_gratis": false,
+     "link": "https://meli.la/2PySxPN",
+     "lido_em": "2026-11-21T00:12:31.948777+00:00",
+     "de": 5890
+    }
+   ],
+   "selo": "SUBINDO"
+  },
+  {
+   "tema": "Eletrônicos & Eletrodomésticos",
+   "titulo": "Suporte TV Fixo Universal 10\" a 100\" Polegadas Forte Para Todas as",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_854028-MLA117416860537_092026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 1900,
+     "frete_gratis": false,
+     "link": "https://meli.la/2bm862a",
+     "lido_em": "2026-11-21T00:12:02.539602+00:00",
+     "de": 2190
+    }
+   ],
+   "selo": "MAIS VENDIDO"
+  },
+  {
+   "tema": "Beleza & Saúde",
+   "titulo": "Escova modeladora philco pec17a Revestimento cerâmica bivolt Preto",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_849692-MLA109736547649_032026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 11800,
+     "frete_gratis": true,
+     "link": "https://meli.la/1a95eXT",
+     "lido_em": "2026-11-21T00:09:36.373875+00:00",
+     "de": 13990
+    }
+   ],
+   "selo": "EM ALTA"
+  },
+  {
+   "tema": "Acessórios Carro/Moto",
+   "titulo": "WD-40 Spray Desengripante Multiuso Anticorrosivo 300ml",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_867830-MLA119517376528_112026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 3777,
+     "frete_gratis": false,
+     "link": "https://meli.la/1qkZP1B",
+     "lido_em": "2026-11-21T00:06:40.844590+00:00"
+    }
+   ],
+   "selo": "EM ALTA"
+  },
+  {
+   "tema": "Mercado & Bebidas",
+   "titulo": "Whisky Blended Scotch 12 Anos 1 Litro Grand Old Parr",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_733878-MLA99929513535_112025-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 10880,
+     "frete_gratis": false,
+     "link": "https://meli.la/2uaGnEW",
+     "lido_em": "2026-11-21T00:05:13.598324+00:00",
+     "de": 19190
+    }
+   ],
+   "selo": "SUBINDO"
+  },
+  {
+   "tema": "Pets",
+   "titulo": "Sifão Limpeza Com Bomba Manual Para Aquário Sugador Sujeiras",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_800000-MLA115958626812_092026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 1442,
+     "frete_gratis": false,
+     "link": "https://meli.la/2GADEys",
+     "lido_em": "2026-11-21T00:04:43.860841+00:00"
+    }
+   ],
+   "selo": "EM ALTA"
+  },
+  {
+   "tema": "Ferramentas & Construção",
+   "titulo": "Escada Tesoura Alumínio 7 Degraus Botafogo Lar & Lazer Dobrável",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_864280-MLA99479474264_112025-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 24638,
+     "frete_gratis": false,
+     "link": "https://meli.la/2tMqbEP",
+     "lido_em": "2026-11-21T00:02:18.385924+00:00"
+    }
+   ],
+   "selo": "EM ALTA"
+  },
+  {
+   "tema": "Games",
+   "titulo": "Nintendo Switch Console Oled 64gb + Super Mario Bros Wonder",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_928841-MLA93525033946_102025-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 179881,
+     "frete_gratis": true,
+     "link": "https://meli.la/2hWeavg",
+     "lido_em": "2026-11-21T00:01:48.718874+00:00"
+    }
+   ],
+   "selo": "EM ALTA"
+  },
+  {
+   "tema": "Casa & Decoração",
+   "titulo": "Lixeira Automatica Inteligente 16 L Com Sensor Touch Cozinha Cor",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_807619-MLA120047031384_112026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 5905,
+     "frete_gratis": false,
+     "link": "https://meli.la/1LbVWm4",
+     "lido_em": "2026-11-21T00:01:19.101373+00:00",
+     "de": 15999
+    }
+   ],
+   "selo": "EM ALTA"
+  },
+  {
+   "tema": "Esportes & Fitness",
+   "titulo": "Bola Vôlei Penalty Soft Toque Macio E Confortável Câmara Arbility",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_870181-MLA109038828331_032026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 5790,
+     "frete_gratis": false,
+     "link": "https://meli.la/1AAeUVn",
+     "lido_em": "2026-11-20T23:58:54.446290+00:00",
+     "de": 10257
+    }
+   ],
+   "selo": "EM ALTA"
+  },
+  {
+   "tema": "Bebês & Brinquedos",
+   "titulo": "Patinete Infantil 3 Rodas Com Led Som E Cesta Menino Menina Cor Rosa",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_829394-MLA99479039346_112025-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 7890,
+     "frete_gratis": true,
+     "link": "https://meli.la/1ev3BSE",
+     "lido_em": "2026-11-20T23:58:24.758214+00:00",
+     "de": 14990
+    }
+   ],
+   "selo": "SUBINDO"
+  },
+  {
+   "tema": "Eletrônicos & Eletrodomésticos",
+   "titulo": "Relogio Smartwatch 10 Ultra Plus Preto Tela AMOLED Monitor Saúde GPS",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_792783-MLA99508638586_112025-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 5250,
+     "frete_gratis": false,
+     "link": "https://meli.la/2ptQY5r",
+     "lido_em": "2026-11-20T23:57:55.386021+00:00",
+     "de": 9680
+    }
+   ],
+   "selo": "EM ALTA"
+  },
+  {
+   "tema": "Beleza & Saúde",
+   "titulo": "Gel De Limpeza Facial Effaclar Concentrado 300g La Roche Posay",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_976360-MLA115029876009_072026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 13390,
+     "frete_gratis": true,
+     "link": "https://meli.la/2K4y8qe",
+     "lido_em": "2026-11-20T23:55:30.074953+00:00"
+    }
+   ],
+   "selo": "EM ALTA"
+  },
+  {
+   "tema": "Acessórios Carro/Moto",
+   "titulo": "Lona Plástica Azul 5x3 Com Corda Impermeável Reforçada",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_753107-MLA116538057447_082026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 5890,
+     "frete_gratis": false,
+     "link": "https://meli.la/1rZeGBF",
+     "lido_em": "2026-11-20T23:52:36.003660+00:00",
+     "de": 7890
+    }
+   ],
+   "selo": "EM ALTA"
+  },
+  {
+   "tema": "Mercado & Bebidas",
+   "titulo": "Refrigerante Zero Açúcar Coca-Cola Mini Garrafa 12 Unidades 200ml Cada",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_792400-MLA99441425270_112025-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 2482,
+     "frete_gratis": false,
+     "link": "https://meli.la/1UWg3nx",
+     "lido_em": "2026-11-20T23:51:07.345614+00:00"
+    }
+   ],
+   "selo": "SUBINDO"
+  },
+  {
+   "tema": "Pets",
+   "titulo": "Guia Retrátil para Cães e Gatos de 5 Metros com Trava de Segurança e",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_740153-MLA112906578102_072026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 2390,
+     "frete_gratis": false,
+     "link": "https://meli.la/2Fwapp7",
+     "lido_em": "2026-11-20T23:50:37.603003+00:00",
+     "de": 2600
+    }
+   ],
+   "selo": "EM ALTA"
+  },
+  {
+   "tema": "Ferramentas & Construção",
+   "titulo": "Escada 5 Degraus Botafogo Lar & Lazer Metal 120kg Reforçada",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_678286-MLA99853978433_112025-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 26480,
+     "frete_gratis": true,
+     "link": "https://meli.la/2d8mSfK",
+     "lido_em": "2026-11-20T23:48:10.780029+00:00"
+    }
+   ],
+   "selo": "EM ALTA"
+  },
+  {
+   "tema": "Games",
+   "titulo": "Console PlayStation 5 Slim Edição Digital 825 GB",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_971864-MLA91925160023_092025-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 464990,
+     "frete_gratis": true,
+     "link": "https://meli.la/2ZPuZsU",
+     "lido_em": "2026-11-20T23:47:41.332294+00:00"
+    }
+   ],
+   "selo": "EM ALTA"
+  },
+  {
+   "tema": "Casa & Decoração",
+   "titulo": "Kit 10 Lâmpadas LED Bulbo de 40W, Branco Frio 6500K, Bivolt com",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_870759-MLA115238720597_072026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 10990,
+     "frete_gratis": true,
+     "link": "https://meli.la/2Kes5EU",
+     "lido_em": "2026-11-20T23:47:12.102291+00:00",
+     "de": 16990
+    }
+   ],
+   "selo": "EM ALTA"
+  },
+  {
+   "tema": "Esportes & Fitness",
+   "titulo": "Joelheira Esportiva E Manguito Kit Vôlei Cor Preto Tamanho M",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_620945-MLA115657805804_092026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 2886,
+     "frete_gratis": false,
+     "link": "https://meli.la/2KdFS33",
+     "lido_em": "2026-11-20T23:44:46.860307+00:00",
+     "de": 4799
+    }
+   ],
+   "selo": "EM ALTA"
+  },
+  {
+   "tema": "Bebês & Brinquedos",
+   "titulo": "Cercadinho Grande Para Bebe Infantil Vário Tamanho Acessório 127×127cm",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_821539-MLA110242313195_042026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 21999,
+     "frete_gratis": true,
+     "link": "https://meli.la/2XFZ61M",
+     "lido_em": "2026-11-20T23:44:17.414385+00:00",
+     "de": 33888
+    }
+   ],
+   "selo": "EM ALTA"
+  },
+  {
+   "tema": "Eletrônicos & Eletrodomésticos",
+   "titulo": "Smartwatch HUAWEI Band 10 Caixa de Polímeros Duráveis Análise do Sono",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_772291-MLA100008466405_122025-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 18900,
+     "frete_gratis": true,
+     "link": "https://meli.la/2tiPoTh",
+     "lido_em": "2026-11-20T23:43:47.745528+00:00",
+     "de": 21900
+    }
+   ],
+   "selo": "EM ALTA"
+  },
+  {
+   "tema": "Beleza & Saúde",
+   "titulo": "Philips OneBlade Aparador e Barbeador Elétrico com Pente Ajustável 5",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_750670-MLA118429558724_102026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 14610,
+     "frete_gratis": true,
+     "link": "https://meli.la/1urS5fR",
+     "lido_em": "2026-11-20T23:41:21.732429+00:00",
+     "de": 21238
+    }
+   ],
+   "selo": "SUBINDO"
+  },
+  {
+   "tema": "Acessórios Carro/Moto",
+   "titulo": "Aditivo para Combustível - Bardahl MAX S10 - 500ml",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_758504-MLA113986119870_072026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 4300,
+     "frete_gratis": false,
+     "link": "https://meli.la/1S4UT9a",
+     "lido_em": "2026-11-20T23:38:10.523584+00:00"
+    }
+   ],
+   "selo": "EM ALTA"
+  },
+  {
+   "tema": "Mercado & Bebidas",
+   "titulo": "Leite Uht Integral Italac Edge 1L",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_640660-MLA118250043961_092026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 550,
+     "frete_gratis": false,
+     "link": "https://meli.la/1ZnyLhK",
+     "lido_em": "2026-11-20T23:36:41.477789+00:00",
+     "de": 649
+    }
+   ],
+   "selo": "MAIS VENDIDO"
+  },
+  {
+   "tema": "Pets",
+   "titulo": "Guia Unificada Coleira 2,00 Mt Enforcador Cães Adestramento Cor Azul",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_966709-MLA112210365798_062026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 2257,
+     "frete_gratis": false,
+     "link": "https://meli.la/2DAt6G5",
+     "lido_em": "2026-11-20T23:36:11.757114+00:00"
+    }
+   ],
+   "selo": "MAIS VENDIDO"
+  },
+  {
+   "tema": "Ferramentas & Construção",
+   "titulo": "Escada Botafogo 3 Degraus Alumínio Dobrável Pintor Resistente Água",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_947627-MLA95128482024_102025-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 24590,
+     "frete_gratis": true,
+     "link": "https://meli.la/2R79hFd",
+     "lido_em": "2026-11-20T23:33:44.539190+00:00",
+     "de": 30889
+    }
+   ],
+   "selo": "MAIS VENDIDO"
+  },
+  {
+   "tema": "Games",
+   "titulo": "The Legend of Zelda: Ocarina of Time - Nintendo Switch 2 (Digital)",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_926956-MLA118396859851_092026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 32990,
+     "frete_gratis": false,
+     "link": "https://meli.la/181AiFt",
+     "lido_em": "2026-11-20T23:33:14.252041+00:00"
+    }
+   ],
+   "selo": "EM ALTA"
+  },
+  {
+   "tema": "Casa & Decoração",
+   "titulo": "Kit 10 Potes 750ml Com Tampa Trava Plástico Transparente Para",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_770265-MLA117214172384_102026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 3199,
+     "frete_gratis": false,
+     "link": "https://meli.la/24NN9ha",
+     "lido_em": "2026-11-20T23:32:44.151602+00:00",
+     "de": 5590
+    }
+   ],
+   "selo": "EM ALTA"
+  },
+  {
+   "tema": "Esportes & Fitness",
+   "titulo": "Bola De Volêi Rainha 2.5 Quadra E Praia Cor Amarela E Azul",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_723512-MLA99483335756_112025-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 6299,
+     "frete_gratis": false,
+     "link": "https://meli.la/28rsDrf",
+     "lido_em": "2026-11-20T23:30:15.655529+00:00",
+     "de": 7899
+    }
+   ],
+   "selo": "EM ALTA"
+  },
+  {
+   "tema": "Bebês & Brinquedos",
+   "titulo": "Cercadinho Infantil Cercado Bebê Criança Chiqueirinho Seguro Hexagonal",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_608811-MLA118679567818_102026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 12990,
+     "frete_gratis": true,
+     "link": "https://meli.la/1be5LbS",
+     "lido_em": "2026-11-20T23:29:44.870327+00:00"
+    }
+   ],
+   "selo": "EM ALTA"
+  },
+  {
+   "tema": "Eletrônicos & Eletrodomésticos",
+   "titulo": "Relógio Inteligente Gps Smartwatch Amoled 3atm Sport Gps Caixa Preto",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_984233-MLA105531058053_012026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 28700,
+     "frete_gratis": true,
+     "link": "https://meli.la/2bdGKh7",
+     "lido_em": "2026-11-20T23:29:15.284115+00:00",
+     "de": 59900
+    }
+   ],
+   "selo": "EM ALTA"
+  },
+  {
+   "tema": "Beleza & Saúde",
+   "titulo": "Aparelho Medidor de Pressão Arterial Aferidor Monitor Digital Uso",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_751463-MLA115785632275_082026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 4190,
+     "frete_gratis": false,
+     "link": "https://meli.la/29mMm1f",
+     "lido_em": "2026-11-20T23:26:48.719924+00:00",
+     "de": 7990
+    }
+   ],
+   "selo": "EM ALTA"
+  },
+  {
+   "tema": "Moda Feminina",
+   "titulo": "Aloruh Vestido Mini Elegante com Decote V Profundo, Branco com Textura",
+   "foto": "https://img.ltwebstatic.com/v4/j/pi/2025/05/06/76/17465091101911e9fb5a0d7804c9ae271a7b93fa4d_thumbnail_405x552.jpg",
+   "lojas": [
+    {
+     "loja": "Shein",
+     "preco": 10070,
+     "frete_gratis": false,
+     "link": "https://onelink.shein.com/61/68u5vk3jv32e?ismg_ol=BkczXojUn09_01_KOC-C",
+     "lido_em": "2026-11-20T23:23:36.486729+00:00"
+    }
+   ],
+   "selo": "TOP 3 MAIS VENDIDOS"
+  },
+  {
+   "tema": "Moda Masculina",
+   "titulo": "Short Masculino Bermuda Praia 2 Bolsos Zíper Secagem Rápida",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_2X_913708-MLB79953362788_102024-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 3135,
+     "frete_gratis": false,
+     "link": "https://meli.la/1BL8g4C",
+     "lido_em": "2026-11-20T23:20:45.729988+00:00",
+     "de": 4499
+    }
+   ],
+   "selo": "MAIS VENDIDO"
+  },
+  {
+   "tema": "Moda Feminina",
+   "titulo": "Jaqueta Bobojaco Feminina Puffer Impermeavel Capuz Removível Preto Gg",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_2X_916401-MLB115683299230_092026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 14000,
+     "frete_gratis": false,
+     "link": "https://meli.la/1qgq5a3",
+     "lido_em": "2026-11-20T23:18:02.030257+00:00"
+    }
+   ],
+   "selo": "TOP 2 MAIS VENDIDOS"
+  },
+  {
+   "tema": "Moda Masculina",
+   "titulo": "Kit 3 Shorts Masculino Bermuda Linho Verão Envio Imediato",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_2X_703852-MLB93401645900_092025-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 7490,
+     "frete_gratis": false,
+     "link": "https://meli.la/2DUbRtZ",
+     "lido_em": "2026-11-20T23:15:19.493576+00:00",
+     "de": 11990
+    }
+   ],
+   "selo": "TOP 2 MAIS VENDIDOS"
+  },
+  {
+   "tema": "Moda Feminina",
+   "titulo": "GlowEve Camiseta Feminina de Cor Sólida com Gola Redonda, Manga Curta",
+   "foto": "https://img.ltwebstatic.com/v4/j/dps/PS202609051768/689c61eaf8e62b470c7fb3deee07577557ec96ad61d3d515b28639f932d95ede_thumbnail_405x552.jpg",
+   "lojas": [
+    {
+     "loja": "Shein",
+     "preco": 5295,
+     "frete_gratis": false,
+     "link": "https://onelink.shein.com/61/68u5uye7712y?ismg_ol=FxBScflC6fV_01_KOC-C",
+     "lido_em": "2026-11-20T23:12:37.209339+00:00"
+    }
+   ],
+   "selo": "TOP 2 MAIS VENDIDOS"
+  },
+  {
+   "tema": "Moda Masculina",
+   "titulo": "Jaqueta Masculina Puffer Corta Vento Bobojaco Blusa De Frio Preto G",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_2X_641434-MLB110943962716_052026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 5861,
+     "frete_gratis": false,
+     "link": "https://meli.la/2xHhJC7",
+     "lido_em": "2026-11-20T23:10:13.151202+00:00",
+     "de": 12990
+    }
+   ],
+   "selo": "MAIS VENDIDO"
+  },
+  {
+   "tema": "Moda Feminina",
+   "titulo": "Boné Ny New York Yankees Unissex Blogueira Fitão Regulável",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_2X_742048-MLB85253021021_052025-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 2899,
+     "frete_gratis": false,
+     "link": "https://meli.la/1nkr77o",
+     "lido_em": "2026-11-20T23:07:47.762823+00:00",
+     "de": 4999
+    }
+   ],
+   "selo": "MAIS VENDIDO"
+  },
   {
    "tema": "Acessórios Carro/Moto",
    "titulo": "Amplificador Taramps TS 800x4 800W 4 Canais para Som Automotivo",
@@ -128,7 +862,7 @@
   {
    "tema": "Moda Feminina",
    "titulo": "Tênis Casual Kappa Zenit Masculino Unissex Conforto",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_2X_692628-MLB119722648743_102026-F.jpg",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_2X_696772-MLB119102221220_112026-F.jpg",
    "lojas": [
     {
      "loja": "Mercado Livre",
@@ -203,38 +937,6 @@
     }
    ],
    "selo": "EM ALTA"
-  },
-  {
-   "tema": "Beleza & Saúde",
-   "titulo": "O Boticário Liz Flora Desodorante Colônia 100ml",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_837324-MLU75963465495_042024-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 7190,
-     "frete_gratis": true,
-     "link": "https://meli.la/22diDVR",
-     "lido_em": "2026-11-20T11:08:47.096256+00:00",
-     "de": 17990
-    }
-   ],
-   "selo": "SUBINDO"
-  },
-  {
-   "tema": "Moda Feminina",
-   "titulo": "Kit Relógio Feminino Colar Brinco Pulseira Folheado Presente Prateado",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_2X_907811-MLA112159861189_052026-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 3690,
-     "frete_gratis": false,
-     "link": "https://meli.la/2PScqRM",
-     "lido_em": "2026-11-20T11:03:24.452936+00:00",
-     "de": 6990
-    }
-   ],
-   "selo": "TOP 2 MAIS VENDIDOS"
   }
  ]
 }
