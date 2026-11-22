@@ -1,947 +1,541 @@
 {
- "atualizado": "2026-11-21T21:29:48-03:00",
+ "atualizado": "2026-11-22T09:17:00-03:00",
  "ofertas": [
   {
-   "tema": "Mercado & Bebidas",
-   "titulo": "Leite Uht Semidesnatado Zero Lactose Italac Edge 1L",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_911542-MLA118190126693_092026-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 639,
-     "frete_gratis": false,
-     "link": "https://meli.la/2EkPGW9",
-     "lido_em": "2026-11-22T00:27:06.729676+00:00",
-     "de": 749
-    }
-   ],
-   "selo": "TOP 6 MAIS VENDIDOS"
-  },
-  {
-   "tema": "Acessórios Carro/Moto",
-   "titulo": "Vonixx Blend 500ml Proteção E Brilho + Flanela Microfibra",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_660778-MLA110508992255_042026-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 4590,
-     "frete_gratis": false,
-     "link": "https://meli.la/28zbbUs",
-     "lido_em": "2026-11-22T00:26:37.520115+00:00",
-     "de": 7890
-    }
-   ],
-   "selo": "SUBINDO"
-  },
-  {
    "tema": "Pets",
-   "titulo": "Bomba Submersa 2000l/h 2m Lagos Recalque Fontes Aquários Cascata",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_704725-MLA115196227653_072026-F.jpg",
+   "titulo": "Suplemento Farmadox 200g Doxiclina Farmabase para Aves e Suínos em Pó",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_681422-MLA100088141710_122025-F.jpg",
    "lojas": [
     {
      "loja": "Mercado Livre",
-     "preco": 5924,
+     "preco": 7890,
      "frete_gratis": false,
-     "link": "https://meli.la/14QMZ2V",
-     "lido_em": "2026-11-22T00:25:10.628361+00:00",
-     "de": 12090
+     "link": "https://meli.la/2Rq3hdN",
+     "lido_em": "2026-11-22T12:14:45.212532+00:00"
     }
    ],
    "selo": "TOP 3 MAIS VENDIDOS"
   },
   {
    "tema": "Ferramentas & Construção",
-   "titulo": "Extensão Elétrica 5 Metros Preta Filtro De Linha 3 Tomadas Energia",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_919101-MLA115787824327_082026-F.jpg",
+   "titulo": "Torneira Para Pia Cozinha Bancada Gourmet Monocomando Escovada",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_679652-MLA108928814136_032026-F.jpg",
    "lojas": [
     {
      "loja": "Mercado Livre",
-     "preco": 2229,
-     "frete_gratis": false,
-     "link": "https://meli.la/1hvVSHh",
-     "lido_em": "2026-11-22T00:22:47.560946+00:00"
-    }
-   ],
-   "selo": "SUBINDO"
-  },
-  {
-   "tema": "Games",
-   "titulo": "Ssd Kingston A400 240gb 2.5mm",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_882976-MLA99955883721_112025-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 33946,
+     "preco": 15900,
      "frete_gratis": true,
-     "link": "https://meli.la/33Dk7Su",
-     "lido_em": "2026-11-22T00:22:17.823535+00:00"
-    }
-   ],
-   "selo": "SUBINDO"
-  },
-  {
-   "tema": "Casa & Decoração",
-   "titulo": "Água Sanitária Ypê Cloro Ativo 5 L Original",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_950605-MLA99927683925_112025-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 1499,
-     "frete_gratis": false,
-     "link": "https://meli.la/1spwTPG",
-     "lido_em": "2026-11-22T00:21:48.983456+00:00",
-     "de": 1999
-    }
-   ],
-   "selo": "TOP 2 MAIS VENDIDOS"
-  },
-  {
-   "tema": "Esportes & Fitness",
-   "titulo": "Bicicleta Ergométrica Bike Spinning 6kg Sensação Inércia Fitness Preto",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_745785-MLA114987927277_072026-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 49999,
-     "frete_gratis": true,
-     "link": "https://meli.la/1XJcEVx",
-     "lido_em": "2026-11-22T00:19:26.209021+00:00",
-     "de": 109499
-    }
-   ],
-   "selo": "TOP 2 MAIS VENDIDOS"
-  },
-  {
-   "tema": "Bebês & Brinquedos",
-   "titulo": "Blister Triplo Pokémon TCG Reinado Delta - Spritzee",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_622921-MLA119104711006_112026-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 3199,
-     "frete_gratis": false,
-     "link": "https://meli.la/1o7SwCL",
-     "lido_em": "2026-11-22T00:18:56.567613+00:00",
-     "de": 4299
-    }
-   ],
-   "selo": "TOP 2 MAIS VENDIDOS"
-  },
-  {
-   "tema": "Eletrônicos & Eletrodomésticos",
-   "titulo": "Aspirador Pó E Água Soprador Wap Gtw 10 Maré 1400w Cor Cinza",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_627568-MLA108247612641_032026-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 33800,
-     "frete_gratis": true,
-     "link": "https://meli.la/2VdFyzu",
-     "lido_em": "2026-11-22T00:18:27.354837+00:00",
-     "de": 48300
-    }
-   ],
-   "selo": "MAIS VENDIDO"
-  },
-  {
-   "tema": "Beleza & Saúde",
-   "titulo": "Kit Facial Kokeshi Completo 3 Passos Olhos de Gueixa, Pele de",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_980292-MLA115592849216_092026-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 4990,
-     "frete_gratis": false,
-     "link": "https://meli.la/2sX6L1w",
-     "lido_em": "2026-11-22T00:16:04.047921+00:00",
-     "de": 8090
-    }
-   ],
-   "selo": "SUBINDO"
-  },
-  {
-   "tema": "Mercado & Bebidas",
-   "titulo": "Kit CEIA Cálice Com Suco E Pão Ázimo Para Santa Ceia 48 Unidades",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_823318-MLA111640432269_052026-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 3620,
-     "frete_gratis": false,
-     "link": "https://meli.la/1xZLDGH",
-     "lido_em": "2026-11-22T00:13:12.212379+00:00",
-     "de": 4399
-    }
-   ],
-   "selo": "TOP 5 MAIS VENDIDOS"
-  },
-  {
-   "tema": "Acessórios Carro/Moto",
-   "titulo": "Mini Aspirador De Pó Portátil Recarregável Soprador Usb Automotivo",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_739911-MLA111969831660_062026-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 2909,
-     "frete_gratis": false,
-     "link": "https://meli.la/2PkmBVm",
-     "lido_em": "2026-11-22T00:12:42.835454+00:00",
-     "de": 5999
-    }
-   ],
-   "selo": "SUBINDO"
-  },
-  {
-   "tema": "Pets",
-   "titulo": "Comprimido NexGard Anti Pulgas e Carrapatos Cães 25,1-50kg 1 Tablete",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_779227-MLA99942942427_112025-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 7745,
-     "frete_gratis": false,
-     "link": "https://meli.la/1wx3mCK",
-     "lido_em": "2026-11-22T00:11:16.427033+00:00",
-     "de": 8153
-    }
-   ],
-   "selo": "SUBINDO"
-  },
-  {
-   "tema": "Ferramentas & Construção",
-   "titulo": "Carrinho De Mao Chapa 20 Extraforte 65l Tramontina 77714/435",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_923975-MLA99996752997_112025-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 18597,
-     "frete_gratis": true,
-     "link": "https://meli.la/2gQuFxa",
-     "lido_em": "2026-11-22T00:08:52.861145+00:00"
-    }
-   ],
-   "selo": "SUBINDO"
-  },
-  {
-   "tema": "Games",
-   "titulo": "Fone De Ouvido Headset Gamer Havit H2002d P3 Para PS3/PS4/PS5/XBOX/PC",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_759854-MLA99487952684_112025-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 16990,
-     "frete_gratis": true,
-     "link": "https://meli.la/119ztYn",
-     "lido_em": "2026-11-22T00:08:23.260646+00:00",
-     "de": 25990
-    }
-   ],
-   "selo": "SUBINDO"
-  },
-  {
-   "tema": "Casa & Decoração",
-   "titulo": "TP-Link Tapo C500 Câmera de Segurança Wifi 1080P 360° Colorida IP65",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_794417-MLA99985509435_112025-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 22390,
-     "frete_gratis": true,
-     "link": "https://meli.la/2iAxrL6",
-     "lido_em": "2026-11-22T00:07:53.283285+00:00",
-     "de": 29990
-    }
-   ],
-   "selo": "SUBINDO"
-  },
-  {
-   "tema": "Esportes & Fitness",
-   "titulo": "Tenis Olympikus Dynamic Masculino",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_785671-MLA99942088219_112025-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 26190,
-     "frete_gratis": true,
-     "link": "https://meli.la/2iar39h",
-     "lido_em": "2026-11-22T00:05:30.023689+00:00"
-    }
-   ],
-   "selo": "SUBINDO"
-  },
-  {
-   "tema": "Bebês & Brinquedos",
-   "titulo": "Shampoo Johnson's Baby Glicerina Hipoalergênico 750ml",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_973923-MLA99918118901_112025-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 3951,
-     "frete_gratis": true,
-     "link": "https://meli.la/1Dpnxwy",
-     "lido_em": "2026-11-22T00:05:00.711672+00:00",
-     "de": 4939
-    }
-   ],
-   "selo": "SUBINDO"
-  },
-  {
-   "tema": "Eletrônicos & Eletrodomésticos",
-   "titulo": "Roteador Huawei AX2S WiFi 6 Mesh+ Banda Dupla com Controle Parental",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_740344-MLA113061165432_072026-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 15400,
-     "frete_gratis": true,
-     "link": "https://meli.la/17qQa3D",
-     "lido_em": "2026-11-22T00:04:31.782148+00:00",
-     "de": 49900
-    }
-   ],
-   "selo": "MAIS VENDIDO"
-  },
-  {
-   "tema": "Beleza & Saúde",
-   "titulo": "Papel higiênico Neve Toque da Seda folha dupla 30 m de 32 un",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_846712-MLA99595796020_122025-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 8199,
-     "frete_gratis": false,
-     "link": "https://meli.la/2zxzGT8",
-     "lido_em": "2026-11-22T00:02:09.403196+00:00"
-    }
-   ],
-   "selo": "SUBINDO"
-  },
-  {
-   "tema": "Mercado & Bebidas",
-   "titulo": "Emulsificante Gel Plus Para Confeitaria E Sorvete 850g Marvi",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_665311-MLA116323595189_082026-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 4271,
-     "frete_gratis": false,
-     "link": "https://meli.la/1GG9rTe",
-     "lido_em": "2026-11-21T23:59:16.912974+00:00",
-     "de": 4496
-    }
-   ],
-   "selo": "SUBINDO"
-  },
-  {
-   "tema": "Acessórios Carro/Moto",
-   "titulo": "Caixa 12 Litros Óleo 5W40 VW Original Maxi Performance",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_645710-MLA118439242944_102026-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 57123,
-     "frete_gratis": true,
-     "link": "https://meli.la/1tjfxEV",
-     "lido_em": "2026-11-21T23:58:48.097052+00:00",
-     "de": 65000
-    }
-   ],
-   "selo": "EM ALTA"
-  },
-  {
-   "tema": "Pets",
-   "titulo": "Tapete Higiênico Para Cachorro Descartável Alta Absorção 60x60 60",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_939566-MLA116739049828_092026-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 5500,
-     "frete_gratis": false,
-     "link": "https://meli.la/2x2aQ9X",
-     "lido_em": "2026-11-21T23:57:22.219309+00:00",
-     "de": 9900
-    }
-   ],
-   "selo": "TOP 2 MAIS VENDIDOS"
-  },
-  {
-   "tema": "Ferramentas & Construção",
-   "titulo": "Chuveiro Elétrico Fame Intense Eletrônico Luxo White Potente Cor",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_827922-MLA98777542521_112025-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 24548,
-     "frete_gratis": true,
-     "link": "https://meli.la/27NjpNX",
-     "lido_em": "2026-11-21T23:54:59.644728+00:00",
-     "de": 40739
-    }
-   ],
-   "selo": "SUBINDO"
-  },
-  {
-   "tema": "Games",
-   "titulo": "SSD240GB Adata 2.5 SU650 ASU650SS-240GT-R 240GB preto",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_751167-MLA99943522395_112025-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 26889,
-     "frete_gratis": true,
-     "link": "https://meli.la/25ZQhYY",
-     "lido_em": "2026-11-21T23:54:30.645076+00:00"
-    }
-   ],
-   "selo": "SUBINDO"
-  },
-  {
-   "tema": "Casa & Decoração",
-   "titulo": "Capa De Colchão Impermeável Hospitalar Antialérgico Antiacaro Antimofo",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_662898-MLA113302152998_072026-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 5498,
-     "frete_gratis": false,
-     "link": "https://meli.la/1mQv3dB",
-     "lido_em": "2026-11-21T23:54:01.365778+00:00",
-     "de": 7798
-    }
-   ],
-   "selo": "EM ALTA"
-  },
-  {
-   "tema": "Esportes & Fitness",
-   "titulo": "Smartwatch HUAWEI WATCH FIT 5 AMOLED de 182\" Design Leve Mini Treino",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_830386-MLA109705323330_042026-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 69900,
-     "frete_gratis": true,
-     "link": "https://meli.la/2EVDBpv",
-     "lido_em": "2026-11-21T23:51:38.326808+00:00",
-     "de": 149900
-    }
-   ],
-   "selo": "SUBINDO"
-  },
-  {
-   "tema": "Bebês & Brinquedos",
-   "titulo": "Blister Duplo Com Moeda Celebração 30 Anos Pokémon TCG Português",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_896714-MLA117063745326_102026-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 11490,
-     "frete_gratis": true,
-     "link": "https://meli.la/1EYKrLo",
-     "lido_em": "2026-11-21T23:51:09.176209+00:00"
-    }
-   ],
-   "selo": "SUBINDO"
-  },
-  {
-   "tema": "Eletrônicos & Eletrodomésticos",
-   "titulo": "Smartwatch Xiaomi Redmi Watch 5 Active Tela Lcd 2.00 Preto",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_900217-MLA116031574344_092026-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 24200,
-     "frete_gratis": true,
-     "link": "https://meli.la/2Gzx7ZX",
-     "lido_em": "2026-11-21T23:50:40.189372+00:00"
-    }
-   ],
-   "selo": "SUBINDO"
-  },
-  {
-   "tema": "Beleza & Saúde",
-   "titulo": "Creme Multirreparador Pele Sensível Cicaplast Baume B5+ La Roche-Posay",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_695558-MLA119937437423_102026-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 6437,
-     "frete_gratis": false,
-     "link": "https://meli.la/2JGu4QM",
-     "lido_em": "2026-11-21T23:48:15.923124+00:00",
-     "de": 10990
-    }
-   ],
-   "selo": "MAIS VENDIDO"
-  },
-  {
-   "tema": "Mercado & Bebidas",
-   "titulo": "Suplemento Em Pó Nutren Senior 50+ Carboidratos Sem Sabor 740g",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_984686-MLA99458609238_112025-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 14290,
-     "frete_gratis": true,
-     "link": "https://meli.la/33ZRQAK",
-     "lido_em": "2026-11-21T23:44:53.347345+00:00",
-     "de": 23900
-    }
-   ],
-   "selo": "SUBINDO"
-  },
-  {
-   "tema": "Acessórios Carro/Moto",
-   "titulo": "Lona Plástica Preta 4x30m Grande Proteção Pintura Obra Reforma",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_759996-MLA110163578978_042026-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 3600,
-     "frete_gratis": false,
-     "link": "https://meli.la/2UiPEJ7",
-     "lido_em": "2026-11-21T23:44:24.499394+00:00",
-     "de": 6900
-    }
-   ],
-   "selo": "SUBINDO"
-  },
-  {
-   "tema": "Pets",
-   "titulo": "Aquatank Filtro Externo Hang On Hf-0200 250l/h",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_859834-MLA113678720504_072026-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 3250,
-     "frete_gratis": false,
-     "link": "https://meli.la/21SYAMK",
-     "lido_em": "2026-11-21T23:42:58.268459+00:00"
-    }
-   ],
-   "selo": "SUBINDO"
-  },
-  {
-   "tema": "Ferramentas & Construção",
-   "titulo": "Escada Articulada Alumínio 3,35m 13 Posições Dobrável Botafogo",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_619627-MLA93091444904_092025-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 11662,
-     "frete_gratis": true,
-     "link": "https://meli.la/1WgDNvq",
-     "lido_em": "2026-11-21T23:40:34.876327+00:00",
-     "de": 13721
-    }
-   ],
-   "selo": "SUBINDO"
-  },
-  {
-   "tema": "Games",
-   "titulo": "Controle Joystick Sem Fio Sony Playstation 5 Midnight Black Preto",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_759059-MLA99508283678_112025-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 44990,
-     "frete_gratis": true,
-     "link": "https://meli.la/1qwc76f",
-     "lido_em": "2026-11-21T23:40:05.456468+00:00"
+     "link": "https://meli.la/2Q2znkj",
+     "lido_em": "2026-11-22T12:12:04.648255+00:00",
+     "de": 19900
     }
    ],
    "selo": "EM ALTA"
   },
   {
    "tema": "Casa & Decoração",
-   "titulo": "Capa Protetora para Colchão Casal com Zíper Malha Cinza",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_998581-MLA104900707446_012026-F.jpg",
+   "titulo": "Kit 2 Travesseiros 70x50 Antialérgico Lavável Fibra Siliconada Toque",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_774639-MLA100083759943_122025-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 3590,
+     "frete_gratis": false,
+     "link": "https://meli.la/1Qvno8r",
+     "lido_em": "2026-11-22T12:11:34.803992+00:00",
+     "de": 6320
+    }
+   ],
+   "selo": "MAIS VENDIDO"
+  },
+  {
+   "tema": "Bebês & Brinquedos",
+   "titulo": "Jogo Caiu Perdeu Pais & Filhos 54 Peças de Madeira",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_734298-MLA93538649792_102025-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 2036,
+     "frete_gratis": false,
+     "link": "https://meli.la/15Syyp8",
+     "lido_em": "2026-11-22T12:09:05.036340+00:00"
+    }
+   ],
+   "selo": "SUBINDO"
+  },
+  {
+   "tema": "Beleza & Saúde",
+   "titulo": "Fralda Bigfral Derma Plus M 8 Unidades Tamanho Médio",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_952728-MLA99929505489_112025-F.jpg",
    "lojas": [
     {
      "loja": "Mercado Livre",
      "preco": 3099,
      "frete_gratis": false,
-     "link": "https://meli.la/2JTCWSv",
-     "lido_em": "2026-11-21T23:39:36.014677+00:00",
-     "de": 4090
+     "link": "https://meli.la/14EWfnY",
+     "lido_em": "2026-11-22T12:08:33.584214+00:00"
     }
    ],
    "selo": "SUBINDO"
   },
   {
-   "tema": "Esportes & Fitness",
-   "titulo": "Vans Knu Skool Sem gênero Adultos",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_650052-MLA95402458532_102025-F.jpg",
+   "tema": "Acessórios Carro/Moto",
+   "titulo": "Modulo Taramps 400 Rms Ts-400 Ts400x4 T400 4 Canais V6",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_727270-MLA116319031959_082026-F.jpg",
    "lojas": [
     {
      "loja": "Mercado Livre",
-     "preco": 49990,
+     "preco": 15590,
      "frete_gratis": true,
-     "link": "https://meli.la/2rp7f6D",
-     "lido_em": "2026-11-21T23:37:10.744436+00:00"
+     "link": "https://meli.la/24PTmgj",
+     "lido_em": "2026-11-22T12:05:23.472412+00:00",
+     "de": 19900
     }
    ],
-   "selo": "SUBINDO"
+   "selo": "TOP 2 MAIS VENDIDOS"
   },
   {
-   "tema": "Bebês & Brinquedos",
-   "titulo": "Jogo De Mantimento 5 Potes Personalizado Livre De Bpa Vermelho",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_813703-MLA113949215370_072026-F.jpg",
+   "tema": "Mercado & Bebidas",
+   "titulo": "Geladinho Buschle Americano Com 40 Unidades 55ml",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_814703-MLA99434603736_112025-F.jpg",
    "lojas": [
     {
      "loja": "Mercado Livre",
-     "preco": 2439,
+     "preco": 1360,
      "frete_gratis": false,
-     "link": "https://meli.la/1joyWbP",
-     "lido_em": "2026-11-21T23:36:41.245928+00:00",
-     "de": 3699
-    }
-   ],
-   "selo": "SUBINDO"
-  },
-  {
-   "tema": "Eletrônicos & Eletrodomésticos",
-   "titulo": "Suporte Articulado Mesa Monitor 17 A 35 Polegadas 9kg ELG Pistão Giro",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_854275-MLA114197244800_082026-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 15519,
-     "frete_gratis": true,
-     "link": "https://meli.la/21LQ79M",
-     "lido_em": "2026-11-21T23:36:12.119056+00:00",
-     "de": 25090
-    }
-   ],
-   "selo": "SUBINDO"
-  },
-  {
-   "tema": "Beleza & Saúde",
-   "titulo": "Maquina Maquininha Dragao Acabamento Cortar Cabelo Aparador Barba",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_952927-MLA115681613734_092026-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 2290,
-     "frete_gratis": false,
-     "link": "https://meli.la/24ePxNF",
-     "lido_em": "2026-11-21T23:33:47.353868+00:00",
-     "de": 3490
-    }
-   ],
-   "selo": "MAIS VENDIDO"
-  },
-  {
-   "tema": "Moda Masculina",
-   "titulo": "Kit 6 Cuecas Boxer Lupo Sem Costura Box Microfibra Original",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_2X_797944-MLB82978249605_032025-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 11658,
-     "frete_gratis": false,
-     "link": "https://meli.la/2Bf6hXo",
-     "lido_em": "2026-11-21T23:30:54.415743+00:00",
-     "de": 34999
-    }
-   ],
-   "selo": "TOP 5 MAIS VENDIDOS"
-  },
-  {
-   "tema": "Moda Masculina",
-   "titulo": "Camiseta Tech Light Insider Masculino",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_2X_914288-MLB119935520173_102026-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 5386,
-     "frete_gratis": false,
-     "link": "https://meli.la/1Rymm3n",
-     "lido_em": "2026-11-21T23:28:31.105547+00:00",
-     "de": 18900
+     "link": "https://meli.la/2K1dbbg",
+     "lido_em": "2026-11-22T12:03:53.057981+00:00",
+     "de": 1599
     }
    ],
    "selo": "TOP 6 MAIS VENDIDOS"
   },
   {
-   "tema": "Acessórios Carro/Moto",
-   "titulo": "Lona Plástica Polietileno 3x2m Azul Impermeável Lonas Online com UV",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_643376-MLA99585610312_122025-F.jpg",
+   "tema": "Pets",
+   "titulo": "Cama Gato Nuvem Caminha Pet Redonda Ninho Soft Macia 50x50cm Cor Bege",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_614860-MLA109764006388_042026-F.jpg",
    "lojas": [
     {
      "loja": "Mercado Livre",
-     "preco": 2390,
+     "preco": 4971,
      "frete_gratis": false,
-     "link": "https://meli.la/1VrYuFT",
-     "lido_em": "2026-11-21T19:09:22.004905+00:00",
-     "de": 3990
+     "link": "https://meli.la/1xuk6nt",
+     "lido_em": "2026-11-22T12:03:22.861777+00:00",
+     "de": 5990
+    }
+   ],
+   "selo": "SUBINDO"
+  },
+  {
+   "tema": "Ferramentas & Construção",
+   "titulo": "Extensão Elétrica 3 Metros com 3 Tomada Bivolt Branco Bestcon",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_707984-MLA116332933142_092026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 1990,
+     "frete_gratis": false,
+     "link": "https://meli.la/1XKHXEm",
+     "lido_em": "2026-11-22T12:00:54.597024+00:00",
+     "de": 2590
+    }
+   ],
+   "selo": "TOP 2 MAIS VENDIDOS"
+  },
+  {
+   "tema": "Games",
+   "titulo": "EA Sports FC 27 - PS5",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_758069-MLA116701281297_082026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 28900,
+     "frete_gratis": true,
+     "link": "https://meli.la/1v3eget",
+     "lido_em": "2026-11-22T12:00:20.608614+00:00"
+    }
+   ],
+   "selo": "TOP 3 MAIS VENDIDOS"
+  },
+  {
+   "tema": "Casa & Decoração",
+   "titulo": "Lava Roupas Líquido Omo Lavanderia Profissional Lavagem 7 L",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_893134-MLA115783362979_082026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 8490,
+     "frete_gratis": false,
+     "link": "https://meli.la/153CFEU",
+     "lido_em": "2026-11-22T11:59:49.958614+00:00",
+     "de": 9228
     }
    ],
    "selo": "MAIS VENDIDO"
   },
   {
-   "tema": "Mercado & Bebidas",
-   "titulo": "Leite Em Pó Integral Italac Pacote com 400g",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_778450-MLA109729895914_042026-F.jpg",
+   "tema": "Bebês & Brinquedos",
+   "titulo": "Kit 10 Squishy Mochi Bichinhos Macios De Apertar Antiestresse",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_777795-MLA119713643197_102026-F.jpg",
    "lojas": [
     {
      "loja": "Mercado Livre",
-     "preco": 800,
+     "preco": 2438,
      "frete_gratis": false,
-     "link": "https://meli.la/1UAnbpb",
-     "lido_em": "2026-11-21T19:07:55.018390+00:00"
+     "link": "https://meli.la/1BVSRRC",
+     "lido_em": "2026-11-22T11:57:20.777658+00:00",
+     "de": 3990
+    }
+   ],
+   "selo": "TOP 2 MAIS VENDIDOS"
+  },
+  {
+   "tema": "Beleza & Saúde",
+   "titulo": "Cetaphil Loção Hidratante Corporal e Facial para Pele Sensível, Normal",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_800625-MLA118013409895_092026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 19800,
+     "frete_gratis": true,
+     "link": "https://meli.la/2Gdyc4R",
+     "lido_em": "2026-11-22T11:56:50.651482+00:00"
+    }
+   ],
+   "selo": "SUBINDO"
+  },
+  {
+   "tema": "Acessórios Carro/Moto",
+   "titulo": "Bomba Elétrica Portátil Digital Para Encher Pneu De Carro Moto",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_919649-MLA112122698633_052026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 14157,
+     "frete_gratis": true,
+     "link": "https://meli.la/1ZYSEhD",
+     "lido_em": "2026-11-22T11:53:49.565230+00:00",
+     "de": 39998
+    }
+   ],
+   "selo": "TOP 2 MAIS VENDIDOS"
+  },
+  {
+   "tema": "Mercado & Bebidas",
+   "titulo": "Azeite de Oliva Extra Virgem O-live & Co 450ml",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_646702-MLA91837435296_092025-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 2700,
+     "frete_gratis": false,
+     "link": "https://meli.la/33aeJXd",
+     "lido_em": "2026-11-22T11:52:19.300204+00:00",
+     "de": 3990
     }
    ],
    "selo": "TOP 5 MAIS VENDIDOS"
   },
   {
    "tema": "Pets",
-   "titulo": "Suplemento Equino Lavizoo Oxygen Líquido Adulto 500 mL",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_612085-MLA92722241325_092025-F.jpg",
+   "titulo": "Ração Golden Gato Castrado Adulto Sabor Frango 10,1kg",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_956444-MLA116327367506_092026-F.jpg",
    "lojas": [
     {
      "loja": "Mercado Livre",
-     "preco": 14877,
+     "preco": 15999,
      "frete_gratis": true,
-     "link": "https://meli.la/2xUxLjU",
-     "lido_em": "2026-11-21T19:07:26.003307+00:00"
+     "link": "https://meli.la/2sD4M9B",
+     "lido_em": "2026-11-22T11:51:47.051688+00:00"
     }
    ],
-   "selo": "TOP 2 MAIS VENDIDOS"
+   "selo": "TOP 3 MAIS VENDIDOS"
   },
   {
    "tema": "Ferramentas & Construção",
-   "titulo": "3 Mantas Asfáltica Aluminizada Telhado Auto Adesiva 45cmx10m",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_776678-MLA95631255988_102025-F.jpg",
+   "titulo": "Régua Extensão Elétrica 6 Tomadas Filtro Linha 10a Cabo 2 Metros",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_859190-MLA100084628639_122025-F.jpg",
    "lojas": [
     {
      "loja": "Mercado Livre",
-     "preco": 27329,
-     "frete_gratis": true,
-     "link": "https://meli.la/1VhAoqJ",
-     "lido_em": "2026-11-21T19:05:00.871794+00:00",
-     "de": 46872
+     "preco": 2889,
+     "frete_gratis": false,
+     "link": "https://meli.la/2EASUsN",
+     "lido_em": "2026-11-22T11:49:20.362020+00:00",
+     "de": 4489
     }
    ],
    "selo": "MAIS VENDIDO"
   },
   {
    "tema": "Games",
-   "titulo": "Interno Adata Su650 240gb Azul-marinho",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_699163-MLA91971851815_092025-F.jpg",
+   "titulo": "Controle Gamesir Tegenaria T3 Lite Com Fio Para Pc Switch Android Ios",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_753810-MLA99991088207_112025-F.jpg",
    "lojas": [
     {
      "loja": "Mercado Livre",
-     "preco": 26900,
+     "preco": 8350,
      "frete_gratis": true,
-     "link": "https://meli.la/2mXNstk",
-     "lido_em": "2026-11-21T19:04:31.258092+00:00"
+     "link": "https://meli.la/2ZE4PWf",
+     "lido_em": "2026-11-22T11:48:49.415267+00:00",
+     "de": 17767
     }
    ],
-   "selo": "TOP 2 MAIS VENDIDOS"
+   "selo": "SUBINDO"
   },
   {
    "tema": "Casa & Decoração",
-   "titulo": "Protetor De Colchão Casal Impermeável Capa Protetora Antiácaros",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_824877-MLA82894835211_032025-F.jpg",
+   "titulo": "Campainha Sem Fio Intelbras Cib 101s Com Bateria - Cor Preta",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_820176-MLA100035740917_122025-F.jpg",
    "lojas": [
     {
      "loja": "Mercado Livre",
-     "preco": 3094,
+     "preco": 7266,
      "frete_gratis": false,
-     "link": "https://meli.la/235Ygcq",
-     "lido_em": "2026-11-21T19:04:01.489312+00:00",
-     "de": 3590
+     "link": "https://meli.la/1Y8V9dh",
+     "lido_em": "2026-11-22T11:48:19.394389+00:00"
     }
    ],
    "selo": "EM ALTA"
   },
   {
    "tema": "Esportes & Fitness",
-   "titulo": "Kit 20 Itens Esportivos Para Treino Em Casa Academia Fitness Funcional",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_990345-MLA115532130447_082026-F.jpg",
+   "titulo": "Corda de Pular Speed Rope 3M Profissional Academia Fit com Rolamento",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_867552-MLA112449086376_062026-F.jpg",
    "lojas": [
     {
      "loja": "Mercado Livre",
-     "preco": 4897,
+     "preco": 1900,
      "frete_gratis": false,
-     "link": "https://meli.la/1sBS1hg",
-     "lido_em": "2026-11-21T19:01:37.473211+00:00",
-     "de": 5997
+     "link": "https://meli.la/2awJN6z",
+     "lido_em": "2026-11-22T11:45:48.542708+00:00"
     }
    ],
-   "selo": "EM ALTA"
+   "selo": "TOP 3 MAIS VENDIDOS"
   },
   {
    "tema": "Bebês & Brinquedos",
-   "titulo": "Pokémon ME05 Escuridão Absoluta Booster 6 Cartas Copag",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_670757-MLA118001948637_092026-F.jpg",
+   "titulo": "Blister Triplo Pokémon ME05 Escuridão Absoluta",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_650344-MLA116714869329_082026-F.jpg",
    "lojas": [
     {
      "loja": "Mercado Livre",
-     "preco": 1290,
+     "preco": 2990,
      "frete_gratis": false,
-     "link": "https://meli.la/1oBo4WB",
-     "lido_em": "2026-11-21T19:01:08.323166+00:00"
+     "link": "https://meli.la/11yWbLv",
+     "lido_em": "2026-11-22T11:45:17.139576+00:00",
+     "de": 4299
     }
    ],
    "selo": "MAIS VENDIDO"
   },
   {
    "tema": "Eletrônicos & Eletrodomésticos",
-   "titulo": "Fritadeira Elétrica Air Fryer Quad Fry Elgin 4,2 L, 1400w",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_927559-MLA99450788218_112025-F.jpg",
+   "titulo": "Power Bank 20000mah Carregador Portátil Turbo Rápido 22.5w Display",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_727353-MLA121910468817_112026-F.jpg",
    "lojas": [
     {
      "loja": "Mercado Livre",
-     "preco": 34990,
-     "frete_gratis": true,
-     "link": "https://meli.la/2zSJLx7",
-     "lido_em": "2026-11-21T19:00:39.298817+00:00",
-     "de": 49900
+     "preco": 7897,
+     "frete_gratis": false,
+     "link": "https://meli.la/2txLsHp",
+     "lido_em": "2026-11-22T11:44:45.877425+00:00",
+     "de": 11900
     }
    ],
    "selo": "SUBINDO"
   },
   {
    "tema": "Beleza & Saúde",
-   "titulo": "Máscara Keune Care Vital Nutrition 50ml Nutrição e Reparação para",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_899348-MLA99892745395_112025-F.jpg",
+   "titulo": "Hidrabene Protetor facial Solar FPS 70 Toque Seco Antissinais Clareia",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_758069-MLA109087295016_042026-F.jpg",
    "lojas": [
     {
      "loja": "Mercado Livre",
-     "preco": 2819,
+     "preco": 3180,
      "frete_gratis": false,
-     "link": "https://meli.la/1F2dpJX",
-     "lido_em": "2026-11-21T18:58:15.287928+00:00"
-    }
-   ],
-   "selo": "EM ALTA"
-  },
-  {
-   "tema": "Acessórios Carro/Moto",
-   "titulo": "Lona Impermeável Azul 3x2m Polietileno Com Ilhoses a Cada Metro",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_704101-MLA99840186801_112025-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 2380,
-     "frete_gratis": false,
-     "link": "https://meli.la/2j3XzQP",
-     "lido_em": "2026-11-21T18:55:22.718620+00:00"
-    }
-   ],
-   "selo": "EM ALTA"
-  },
-  {
-   "tema": "Mercado & Bebidas",
-   "titulo": "Calda De Sorvete Fini Sabor Beijos 1,01kg",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_755973-MLA99926587667_112025-F.jpg",
-   "lojas": [
-    {
-     "loja": "Mercado Livre",
-     "preco": 3514,
-     "frete_gratis": false,
-     "link": "https://meli.la/2nuTKkF",
-     "lido_em": "2026-11-21T18:53:55.289918+00:00",
-     "de": 3699
+     "link": "https://meli.la/1sZ4eUy",
+     "lido_em": "2026-11-22T11:42:16.983810+00:00",
+     "de": 5990
     }
    ],
    "selo": "TOP 3 MAIS VENDIDOS"
   },
   {
-   "tema": "Pets",
-   "titulo": "Ração Seca Golden Premium Especial Gato Adulto Sabor Salmão 3kg",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_704525-MLA118570684578_102026-F.jpg",
+   "tema": "Acessórios Carro/Moto",
+   "titulo": "Compressor de Ar Portátil VERUNTO VER-B15 com Tela Digital para Carro",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_842487-MLA120158163710_112026-F.jpg",
    "lojas": [
     {
      "loja": "Mercado Livre",
-     "preco": 6418,
+     "preco": 6319,
      "frete_gratis": false,
-     "link": "https://meli.la/328k1Mb",
-     "lido_em": "2026-11-21T18:53:26.056567+00:00",
-     "de": 6987
+     "link": "https://meli.la/1So6W82",
+     "lido_em": "2026-11-22T11:39:17.463459+00:00",
+     "de": 7899
     }
    ],
    "selo": "MAIS VENDIDO"
+  },
+  {
+   "tema": "Mercado & Bebidas",
+   "titulo": "Trident Chiclete Sabor Herbal Sem Açucar 21 unidades de 8g",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_716430-MLA99450346496_112025-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 5048,
+     "frete_gratis": false,
+     "link": "https://meli.la/1QNBn4p",
+     "lido_em": "2026-11-22T11:37:45.726640+00:00",
+     "de": 5999
+    }
+   ],
+   "selo": "MAIS VENDIDO"
+  },
+  {
+   "tema": "Pets",
+   "titulo": "Areia Higiênica Granulado Para Gatos 4kg Mandioca + Minerais Controle",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_632907-MLA115701618116_092026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 2440,
+     "frete_gratis": false,
+     "link": "https://meli.la/1wu1AaS",
+     "lido_em": "2026-11-22T11:37:14.648196+00:00",
+     "de": 4999
+    }
+   ],
+   "selo": "TOP 2 MAIS VENDIDOS"
   },
   {
    "tema": "Ferramentas & Construção",
-   "titulo": "Soprador Davely Davely4688 USB-C 5V Preto",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_674554-MLA119255486606_112026-F.jpg",
+   "titulo": "Torneira Baixa Pia Banheiro Lavabo Inox Aço 304 Escovado Bancada",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_770863-MLA117767371493_092026-F.jpg",
    "lojas": [
     {
      "loja": "Mercado Livre",
-     "preco": 4690,
+     "preco": 3997,
      "frete_gratis": false,
-     "link": "https://meli.la/1gjdffU",
-     "lido_em": "2026-11-21T18:51:01.473090+00:00",
-     "de": 9600
+     "link": "https://meli.la/2aeASoy",
+     "lido_em": "2026-11-22T11:34:35.412777+00:00",
+     "de": 5997
     }
    ],
-   "selo": "MAIS VENDIDO"
+   "selo": "TOP 2 MAIS VENDIDOS"
   },
   {
    "tema": "Games",
-   "titulo": "Console Sony Playstation 5 Edição Slim Disk 1tb Branco",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_688343-MLA88139322691_072025-F.jpg",
+   "titulo": "Controle Sem Fio Joystick REDFIN Bluetooth Compatível Para Ps4",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_762912-MLA105696431793_012026-F.jpg",
    "lojas": [
     {
      "loja": "Mercado Livre",
-     "preco": 530000,
-     "frete_gratis": true,
-     "link": "https://meli.la/2tggpkM",
-     "lido_em": "2026-11-21T18:50:31.880378+00:00"
+     "preco": 5490,
+     "frete_gratis": false,
+     "link": "https://meli.la/1Fee6U3",
+     "lido_em": "2026-11-22T11:34:05.469178+00:00",
+     "de": 11490
     }
    ],
    "selo": "EM ALTA"
   },
   {
    "tema": "Casa & Decoração",
-   "titulo": "Câmera de Segurança Inteligente Intelbras iM3 C Branca",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_798191-MLA99474077760_112025-F.jpg",
+   "titulo": "Kit 10 Potes Herméticos Vidro 640ml Starhouse Marmita Forno",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_942823-MLA113526261849_062026-F.jpg",
    "lojas": [
     {
      "loja": "Mercado Livre",
-     "preco": 15990,
+     "preco": 9899,
      "frete_gratis": true,
-     "link": "https://meli.la/1ipdoq5",
-     "lido_em": "2026-11-21T18:50:02.817136+00:00",
-     "de": 21590
+     "link": "https://meli.la/1fgNTpK",
+     "lido_em": "2026-11-22T11:33:34.069791+00:00",
+     "de": 12990
     }
    ],
-   "selo": "EM ALTA"
+   "selo": "SUBINDO"
   },
   {
    "tema": "Esportes & Fitness",
-   "titulo": "Tênis Olympikus Acqua Feminino",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_876643-MLA100702319800_122025-F.jpg",
+   "titulo": "Banco Bike Selim Grande Para Bicicleta Super Comfort Molas Vazado Gel",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_680361-MLA100104494487_122025-F.jpg",
    "lojas": [
     {
      "loja": "Mercado Livre",
-     "preco": 18000,
-     "frete_gratis": true,
-     "link": "https://meli.la/2QevTnj",
-     "lido_em": "2026-11-21T18:47:32.187897+00:00",
-     "de": 22990
+     "preco": 4190,
+     "frete_gratis": false,
+     "link": "https://meli.la/2TpF7K7",
+     "lido_em": "2026-11-22T11:31:02.777161+00:00",
+     "de": 4790
+    }
+   ],
+   "selo": "TOP 3 MAIS VENDIDOS"
+  },
+  {
+   "tema": "Bebês & Brinquedos",
+   "titulo": "Huggies Fralda Descartável Máxima Proteção XG - 112 Un",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_782627-MLA99928206837_112025-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 19499,
+     "frete_gratis": false,
+     "link": "https://meli.la/33RdYwM",
+     "lido_em": "2026-11-22T11:30:31.509670+00:00",
+     "de": 19775
     }
    ],
    "selo": "MAIS VENDIDO"
   },
   {
-   "tema": "Bebês & Brinquedos",
-   "titulo": "Carro Elétrico Infantil Controle Remoto Bateria 6v Marcha Frente/Ré",
-   "foto": "https://http2.mlstatic.com/D_NQ_NP_803047-MLA116816002791_082026-F.jpg",
+   "tema": "Eletrônicos & Eletrodomésticos",
+   "titulo": "LG UltraGear Monitor Gamer 27\" IPS, 144Hz Nativo, 1ms (MBR), Full HD",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_896633-MLA120723721883_112026-F.jpg",
    "lojas": [
     {
      "loja": "Mercado Livre",
-     "preco": 58191,
+     "preco": 69200,
      "frete_gratis": true,
-     "link": "https://meli.la/2NvZmGd",
-     "lido_em": "2026-11-21T18:47:02.648936+00:00",
-     "de": 89990
+     "link": "https://meli.la/1G5P42Y",
+     "lido_em": "2026-11-22T11:29:56.026494+00:00",
+     "de": 103900
     }
    ],
-   "selo": "EM ALTA"
+   "selo": "SUBINDO"
+  },
+  {
+   "tema": "Beleza & Saúde",
+   "titulo": "L'Oréal Paris Elseve Óleo Extraordinário 100ml - Leave In Anti Frizz",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_775128-MLA120018457362_112026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 2990,
+     "frete_gratis": false,
+     "link": "https://meli.la/2mguCTA",
+     "lido_em": "2026-11-22T11:27:27.468585+00:00",
+     "de": 6419
+    }
+   ],
+   "selo": "MAIS VENDIDO"
+  },
+  {
+   "tema": "Moda Masculina",
+   "titulo": "Kit 4 Shorts 2 Em 1 Duplo Dryfit Masculino Compressão Térmic",
+   "foto": "https://http2.mlstatic.com/D_NQ_NP_2X_878492-MLB108664426620_032026-F.jpg",
+   "lojas": [
+    {
+     "loja": "Mercado Livre",
+     "preco": 8999,
+     "frete_gratis": false,
+     "link": "https://meli.la/22JTrmp",
+     "lido_em": "2026-11-22T11:24:17.410239+00:00",
+     "de": 14200
+    }
+   ],
+   "selo": "TOP 8 MAIS VENDIDOS"
   }
  ]
 }
